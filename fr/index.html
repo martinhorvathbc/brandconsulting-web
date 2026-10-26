@@ -1245,6 +1245,13 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
 @media (min-width:900px){.ciny .tv-grid .tv-card:nth-child(7){display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:40px;align-content:start;}
 .ciny .tv-grid .tv-card:nth-child(7)>*{grid-column:2;}
 .ciny .tv-grid .tv-card:nth-child(7)>figure{grid-column:1;grid-row:1 / span 6;max-width:none;}}
+/* RETAZ animácia (26. 10. 2026 večer) – zlatá čiara prebehne reťazou, posledný článok sa rozsvieti */
+.retaz{position:relative;padding-bottom:10px;width:fit-content;max-width:100%;}
+.retaz::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--ochre);transition:width 1.6s cubic-bezier(.6,.05,.3,1) .3s;}
+.reveal.in .retaz::after{width:100%;}
+.reveal.in .retaz li:last-child{animation:retazSvit 1.2s ease 1.9s both;}
+@keyframes retazSvit{0%{box-shadow:0 0 0 0 rgba(200,165,100,.0)}40%{box-shadow:0 0 0 6px rgba(200,165,100,.35)}100%{box-shadow:0 0 0 0 rgba(200,165,100,0)}}
+@media (prefers-reduced-motion:reduce){.retaz::after{transition:none;width:100%;}.reveal.in .retaz li:last-child{animation:none;}}
 /* DOKAZY – pás činov v hero (26. 10. 2026) */
 .dokazy{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:760px;margin:26px 0 30px;}
 .dokaz{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;border:1px solid rgba(200,165,100,.35);text-decoration:none;background:#14181D;}

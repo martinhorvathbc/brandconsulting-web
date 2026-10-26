@@ -997,6 +997,162 @@ nav.nav a{letter-spacing:.05em;}
 .ax-list li::before{content:"";position:absolute;left:0;top:.68em;width:7px;height:7px;transform:rotate(45deg);border:1px solid var(--ochre);background:rgba(207,169,104,.25);}
 .ax-list li:last-child{margin-bottom:0;}
 .why .about-body p,.why .about-body li,.why details p{color:rgba(236,228,212,.82) !important;}
+/* ===== G2 – grafické doladenie: čitateľnosť, menu, obrazy (26. 10. 2026) ===== */
+/* farby: okrová na svetlom papieri ≥ 5:1, zlatá na tme ≥ 7:1 */
+:root{--ochre:#7A5212;--ochre-soft:#CFA968;}
+.eyebrow.on-dark,.hero details.viac > summary{color:var(--gold);}
+
+/* hlavička: plná tma namiesto sivého presvitania */
+header.top{background:rgba(11,18,24,.96);}
+.wordmark span{color:var(--gold);}
+.lang a{color:rgba(236,228,212,.74);}
+.lang a[aria-current]{color:#0B1218;background:var(--gold);}
+
+/* menu: 6 položiek, podmenu */
+nav.nav a{font-size:11.5px;letter-spacing:.16em;color:rgba(236,228,212,.84);}
+nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
+.nav-grp{position:relative;display:flex;align-items:center;}
+.nav-sub{display:flex;}
+@media (min-width:1101px) and (hover:hover){
+  .nav-toggle{display:none !important;}
+  nav.nav{display:flex !important;position:static;flex-direction:row;align-items:center;gap:clamp(20px,2vw,34px);
+    background:none;padding:0;border:0;margin-left:auto;}
+  nav.nav a{padding:0;border-top:none;font-size:11.5px;}
+  nav.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;background:var(--gold);transition:right .4s var(--ease2);}
+  nav.nav a:hover::after,nav.nav a:focus-visible::after{right:0;}
+  .nav-grp{padding:16px 0;margin:-16px 0;}
+  nav.nav .nav-grp > a{padding-right:15px;}
+  .nav-grp > a::before{content:"";position:absolute;right:1px;top:50%;width:5px;height:5px;border-right:1px solid var(--gold);
+    border-bottom:1px solid var(--gold);transform:translateY(-75%) rotate(45deg);transition:transform .3s var(--ease2);}
+  .nav-grp:hover > a::before,.nav-grp:focus-within > a::before{transform:translateY(-25%) rotate(225deg);}
+  .nav-grp > a::after{right:calc(100% + 15px);}
+  .nav-grp > a:hover::after{right:15px;}
+  .nav-sub{position:absolute;top:100%;left:-24px;min-width:240px;flex-direction:column;padding:10px 24px;
+    background:rgba(11,18,24,.98);border:1px solid rgba(207,169,104,.2);border-top:1px solid var(--gold);
+    box-shadow:0 24px 48px -20px rgba(0,0,0,.6);opacity:0;visibility:hidden;transform:translateY(8px);
+    transition:opacity .25s,transform .35s var(--ease2),visibility 0s linear .35s;}
+  .nav-grp:hover .nav-sub,.nav-grp:focus-within .nav-sub{opacity:1;visibility:visible;transform:none;transition-delay:0s;}
+  .nav-sub a{padding:13px 0 !important;border-top:1px solid rgba(207,169,104,.12) !important;font-size:11px !important;letter-spacing:.16em;}
+  .nav-sub a:first-child{border-top:none !important;}
+  .nav-sub a::after{display:none;}
+  nav.nav a.nav-cta{padding:10px 18px;border:1px solid var(--gold-line);color:var(--gold);transition:background .3s,border-color .3s,color .3s;}
+  nav.nav a.nav-cta:hover{background:var(--gold);border-color:var(--gold);color:#0B1218;}
+  nav.nav a.nav-cta::after{display:none;}
+  .lang{margin-left:clamp(18px,2vw,30px);}
+}
+@media (max-width:1100px),(hover:none){
+  .nav-toggle{display:flex;margin-left:auto;}
+  .nav-toggle span{background:var(--ivory);}
+  nav.nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;margin-left:0;
+    padding:6px 28px 22px;background:#0B1218;border-bottom:1px solid rgba(207,169,104,.22);
+    max-height:calc(100vh - 64px);overflow-y:auto;}
+  nav.nav.open{display:flex;}
+  nav.nav a{font-size:12px;letter-spacing:.16em;}
+  nav.nav{align-items:stretch;text-align:left;}
+  nav.nav > a,nav.nav .nav-grp > a,nav.nav .nav-grp > a:first-child{padding:14px 0;border-top:1px solid rgba(207,169,104,.14);}
+  nav.nav > a:first-child{border-top:none;}
+  nav.nav a::after,nav.nav a::before{display:none;}
+  .nav-grp{flex-direction:column;align-items:stretch;}
+  .nav-sub{flex-direction:column;margin:0 0 10px 2px;padding:0 0 0 18px;border-left:1px solid var(--gold-line);}
+  .nav-sub a{padding:9px 0 !important;border-top:none !important;font-size:11px !important;color:rgba(236,228,212,.74) !important;}
+  nav.nav a.nav-cta{border-top:1px solid rgba(207,169,104,.14);}
+  nav.nav a.nav-cta{color:var(--gold);}
+}
+
+/* typografia: Cormorant nie tenko, telo ≥ 17 px */
+.hero h1,.why h2,.kultura .sec-head h2,#fantom .sec-head h2,.fq-3 p{font-weight:500;}
+#fantom .sec-head h2 em,.hero h1 em,.fq p,#fantom .feature-text h3,#fantom .feature-text .result b{font-weight:500;}
+.stat-num,.step-num,.mi-step-num,.begin-mark{font-weight:500;}
+.maxim,.why .lead-line,.ax-quote p,.po-excerpt p,.ax-pos,.ax-strong{font-weight:500;}
+.sec-head h2,.about h2,.why h2,.contact h2,.ref-h3,.kult-card h3,.po-card h3,.person h3,.milestone-body h3,.feature-text h3,.mi-headline{hyphens:manual;-webkit-hyphens:manual;}
+.step p,.mi-step p,.mi-step li,.kult-card p,.ax-col p,.ax-list li,.po-context,.milestone-body p,.voice li,.media-desc,
+.feature-text p,#fantom .feature-text p,.voice-upload-desc{font-size:17px;}
+.about-body p,.sec-head p{font-size:18px;}
+.mi-step h4{font-size:24px;}
+.step h3{font-size:26px;}
+
+/* kontrast na tme: telo ≥ 7:1, popisky ≥ 4.5:1 */
+.hero-body p{color:rgba(236,228,212,.88);}
+.hero-tagline{color:rgba(236,228,212,.74);}
+.maxim-tr{color:rgba(236,228,212,.74);}
+.hero-name{color:rgba(236,228,212,.86);}
+.stat-lbl{color:rgba(236,228,212,.78);}
+.domeny .lbl{color:rgba(236,228,212,.72);}
+.feature-text p,#fantom .feature-text p{color:rgba(236,228,212,.86);}
+#fantom .feature-text .about-more{color:rgba(236,228,212,.74);}
+#fantom .feature-text .about-more a{color:var(--gold) !important;}
+.kult-card p{color:rgba(236,228,212,.84);}
+.kult-zdroj{color:rgba(236,228,212,.74) !important;}
+.kult-foto,.fg-foto{color:rgba(236,228,212,.66);}
+.fq p{color:rgba(236,228,212,.92);}
+.fq-proof{color:rgba(236,228,212,.88);}
+.quote .who span{color:rgba(236,228,212,.74);}
+.contact .lede,.ccol p{color:rgba(236,228,212,.86);}
+.footnote,.footnote *{color:rgba(236,228,212,.66) !important;}
+.mi-block-b p,.mi-block-b li{color:rgba(236,228,212,.86);}
+.po-links,.po-note{color:#5f584d;}
+.media-year,.begin-cta-note,.people .contact-note{color:#5f584d;}
+.voice-upload-credits dt,.voice-upload-credits div > *:first-child{color:#5f584d;}
+
+/* čiara nad citátom v hlavičke sekcie sa nesmie dotýkať textu */
+.sec-head .maxim-line{padding-top:22px;margin-top:30px;}
+
+/* Hlas: ľavý stĺpec ostáva v zábere, žiadna prázdna plocha */
+@media (min-width:881px){ .voice-grid > div:first-child{position:sticky;top:110px;} }
+
+/* Fantóm: titulný vizuál nikdy neorezaný – štvorec, nápis celý */
+@media (min-width:1101px){
+  #fantom .feature-media{top:50%;bottom:auto;height:auto;aspect-ratio:1 / 1;transform:translateY(-50%);
+    width:min(50vw,820px);right:calc((100% - 100vw) / 2);}
+  #fantom .feature-media img{object-fit:cover;object-position:50% 50%;opacity:.96;}
+  #fantom .feature-media::after{background:linear-gradient(90deg,#06080B 0%,rgba(6,8,11,0) 14%),
+    linear-gradient(0deg,#06080B 0%,rgba(6,8,11,0) 14%),linear-gradient(180deg,#06080B 0%,rgba(6,8,11,0) 10%);}
+  #fantom .feature-text{max-width:min(560px,44%);}
+  #fantom .sec-head{max-width:min(620px,48%);}
+}
+@media (max-width:1100px){
+  #fantom .feature-media{height:auto;aspect-ratio:1 / 1;max-height:none;max-width:760px;margin:0 auto;width:100%;}
+  #fantom .feature-media img{object-fit:cover;object-position:50% 50%;}
+  #fantom .feature-media::after{background:linear-gradient(0deg,#06080B 0%,rgba(6,8,11,0) 16%),linear-gradient(180deg,#06080B 0%,rgba(6,8,11,0) 10%);}
+  #fantom .sec-head{margin-top:clamp(36px,6vw,56px);}
+}
+
+/* Umenie: obrazy s textom celé, mená bez delenia */
+.kult-img img[src*="premeny-harfy"]{object-fit:contain;transform:none;}
+.kult-card:hover .kult-img img[src*="premeny-harfy"]{transform:none;}
+.kult-img img[src*="cinemax"]{object-position:50% 22%;}
+
+/* dlhé mená v nadpisoch kariet nedeliť spojovníkom */
+.kult-card h3,.po-card h3{hyphens:manual;-webkit-hyphens:manual;}
+@media (max-width:560px){
+  .sec-head h2,.about h2,.why h2,.contact h2,.ref-h3,.kult-card h3,.po-card h3,.person h3,.milestone-body h3,.feature-text h3,.mi-headline{hyphens:auto;-webkit-hyphens:auto;}
+}
+.kultura .sec-head h2 em,.why h2 em{color:var(--gold);}
+.mi-block-c .mi-block-label{background:#5f584d;}
+.hero{overflow:clip;}
+@media (max-width:380px){
+  .top-inner{padding-left:14px;padding-right:14px;gap:8px;}
+  .wordmark{font-size:12px;letter-spacing:.04em;}
+  .lang{margin-left:4px;}
+  .lang a{padding:4px 2px;font-size:10px;}
+  .nav-toggle{width:30px;padding:4px;}
+}
+/* obrazy s textom v Referenciách: nápis vľavo nesmie byť orezaný */
+.media-photo[src*="place%20as%20a%20brand"],.media-photo[src*="place as a brand"]{object-position:0 50%;}
+.feature-media img[src*="DOKAZ"]{object-position:60% 50%;}
+/* Čím sa odlišuje: päť úzkych stĺpcov s delením slov -> 3 + 2, kratší nadpis */
+#difference .sec-head{max-width:980px;}
+#difference .sec-head h2{font-size:clamp(34px,4.4vw,58px);max-width:24ch;line-height:1.06;}
+#difference .sec-head p{max-width:62ch;}
+#difference .step{hyphens:manual;-webkit-hyphens:manual;}
+@media (min-width:1001px){ #difference .steps{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:clamp(48px,5vw,72px);} }
+@media (min-width:641px) and (max-width:1000px){ #difference .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:48px;} }
+.begin-cta-note,.people .contact-note{font-size:16px;}
+@media (min-width:881px){ .milestone-body{hyphens:manual;-webkit-hyphens:manual;} }
+/* Kontakt: dlhé slovo sa nesmie lámať uprostred */
+.contact h2{font-size:clamp(40px,5.2vw,72px);max-width:20ch;line-height:1.04;}
+@media (max-width:560px){ .contact h2{font-size:clamp(28px,8.4vw,40px);} }
+@media (max-width:400px){ .eyebrow{letter-spacing:.2em;white-space:normal;} .eyebrow::before{flex-basis:22px;} }
 /* ==== koniec V2 ==== */
 
 /* ==== TVARE ==== */
@@ -1019,7 +1175,7 @@ nav.nav a{letter-spacing:.05em;}
  .tv-grid .tv-card{padding:26px 22px 26px 0 !important;border-right:none !important;border-left:none !important;}
  .tv-grid .tv-card:nth-child(2n){padding-left:22px !important;border-left:1px solid rgba(122,91,34,.22) !important;}}
 @media (max-width:620px){.tv-grid{grid-template-columns:1fr;}
- .tv-grid .tv-card{padding:24px 0 !important;border-left:none !important;}}
+ .tv-grid .tv-card:nth-child(n){padding:24px 0 !important;border-left:none !important;border-right:none !important;}}
 /* ==== koniec TVARE ==== */
 /* ==== CISLA ==== */
 .kult-cisla{margin:0 0 clamp(40px,5vw,64px);}
@@ -1066,17 +1222,11 @@ nav.nav a{letter-spacing:.05em;}
     </button>
     <nav class="nav" id="mainNav">
       <a href="#why">Por qué</a>
-      <a href="#method">Metodología</a>
-      <a href="#proof">Prueba</a>
-      <a href="#about">Sobre mí</a>
-      <a href="#voice">Voz</a>
-      <a href="#work">Hitos</a>
-      <a href="#begin">Cómo trabajamos</a>
-      <a href="#pricing">Precio</a>
-      <a href="#people">Equipo</a>
-      <a href="#speaking">Public Speaking</a>
+      <div class="nav-grp"><a href="#method">Metodología</a><div class="nav-sub"><a href="#proof">Prueba</a></div></div>
+      <div class="nav-grp"><a href="#about">Sobre mí</a><div class="nav-sub"><a href="#voice">Voz</a><a href="#fantom">Fantóm opery</a><a href="#kultura">Arte y producción</a><a href="#work">Hitos</a><a href="#speaking">Public Speaking</a></div></div>
+      <div class="nav-grp"><a href="#begin">Cómo trabajamos</a><div class="nav-sub"><a href="#pricing">Precio</a><a href="#people">Equipo</a></div></div>
       <a href="#media">Referencias</a>
-      <a href="#contact">Contacto</a>
+      <a href="#contact" class="nav-cta">Contacto</a>
     </nav>
   </div>
 </header>
@@ -1114,7 +1264,7 @@ nav.nav a{letter-spacing:.05em;}
 <div class="domeny">
   <div class="wrap">
     <span class="lbl">Dónde trabajo</span>
-    <a href="https://www.brandconsulting.sk/" target="_blank" rel="noopener">www.brandconsulting.sk</a>
+    <a href="/">www.brandconsulting.sk</a>
     <a href="https://www.codes.sk/" target="_blank" rel="noopener">www.codes.sk</a>
     <a href="https://www.brandslovensko30.sk/" target="_blank" rel="noopener">www.brandslovensko30.sk</a>
     <a href="https://www.fantomopery.sk/" target="_blank" rel="noopener">www.fantomopery.sk</a>
@@ -2885,7 +3035,7 @@ nav.nav a{letter-spacing:.05em;}
         <p style="line-height:1.4;">Grösslingová 2478/4<br>811 09 Bratislava – Staré Mesto<br>República Eslovaca</p>
         <p style="line-height:1.5;font-size:.9em;">N.º de empresa (IČO): 56 742 045<br>N.º fiscal (DIČ): 2122411709<br>N.º IVA: SK2122411709<br>IBAN: SK03 1100 0000 0029 4223 1610<br>SWIFT: TATRSKBX</p>
         <p style="line-height:1.4;font-size:.8em;opacity:.75;">Inscrita en el Registro Mercantil del Tribunal Municipal de Bratislava III, sección Sro, n.º 184717/B</p>
-        <p><a href="https://www.brandconsulting.sk" target="_blank" rel="noopener">brandconsulting.sk</a></p>
+        <p><a href="/">brandconsulting.sk</a></p>
       </div>
     </div>
     <div class="footnote">

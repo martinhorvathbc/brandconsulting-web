@@ -513,6 +513,22 @@
 .hero-portret{position:absolute;top:70px;right:3%;height:min(78vh,720px);width:auto;z-index:1;opacity:.88;pointer-events:none;
   -webkit-mask-image:linear-gradient(to right,transparent 0,#000 28%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 28%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);mask-composite:intersect;}
 @media (max-width:1100px){.hero-portret{opacity:.18;right:-20%;}}
+
+/* Odľahčenie: dlhé pasáže sa rozbaľujú (26. 10. 2026) */
+details.viac{margin:6px 0 0;}
+details.viac > summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--ochre);padding:10px 0;border-bottom:1px solid currentColor;}
+details.viac > summary::-webkit-details-marker{display:none;}
+details.viac > summary::after{content:"+";font-size:18px;line-height:1;transition:transform .25s;}
+details.viac[open] > summary::after{transform:rotate(45deg);}
+details.viac[open] > summary{margin-bottom:22px;}
+.hero details.viac > summary{color:var(--ochre-soft);}
+details.viac .reveal{opacity:1 !important;transform:none !important;}
+
+.domeny{background:var(--navy-2);padding:16px 0;border-top:1px solid var(--line-light);}
+.domeny .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 26px;font-family:var(--font-display);font-size:13px;letter-spacing:.06em;}
+.domeny .lbl{color:rgba(255,255,255,.55);text-transform:uppercase;font-size:11px;letter-spacing:.18em;}
+.domeny a{color:var(--ochre-soft);text-decoration:none;border-bottom:1px solid transparent;}
+.domeny a:hover{border-bottom-color:currentColor;}
 </style>
 </head>
 <body>
@@ -564,19 +580,32 @@
     <div class="hero-body">
       <p>Trop souvent, la communication devient le point de départ d'un processus qui aurait dû commencer par un changement de la réalité.</p>
       <p>Au cours de trois décennies de travail – à travers les grands médias, les relations internationales, l'administration publique, le secteur privé, la culture et le monde associatif – nous avons observé, encore et encore, le même phénomène.</p>
-      <p>Là où un véritable changement existait sous la communication, la réputation a fini par naître.</p>
+      <details class="viac"><summary>Lire la suite</summary>
+<p>Là où un véritable changement existait sous la communication, la réputation a fini par naître.</p>
       <p>Là où la communication remplaçait une substance absente, la réputation s'est tôt ou tard effondrée.</p>
       <p>La méthode Competitive Reality est née de cette expérience.</p>
       <p>Elle ne repose pas sur la question de <strong>savoir comment mieux communiquer.</strong> Elle commence bien plus tôt. Elle demande <strong>s'il existe une réalité capable de porter la communication.</strong></p>
       <p>Et si cette réalité est compétitive et suffisamment attractive.</p>
       <p>La réponse à cette question détermine tout ce qui suit.</p>
-    </div>
+    
+</details></div>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#proof">Voir la référence →</a>
       <a class="btn btn-ghost" href="#begin">Comment nous travaillons →</a>
     </div>
   </div>
 </section>
+
+<div class="domeny">
+  <div class="wrap">
+    <span class="lbl">Où je suis actif</span>
+    <a href="https://www.brandconsulting.sk/" target="_blank" rel="noopener">www.brandconsulting.sk</a>
+    <a href="https://www.codes.sk/" target="_blank" rel="noopener">www.codes.sk</a>
+    <a href="https://www.brandslovensko30.sk/" target="_blank" rel="noopener">www.brandslovensko30.sk</a>
+    <a href="https://www.fantomopery.sk/" target="_blank" rel="noopener">www.fantomopery.sk</a>
+    <a href="https://www.leroux100.com/" target="_blank" rel="noopener">www.leroux100.com</a>
+  </div>
+</div>
 
 <!-- STATS BAR -->
 <section class="proof" id="stats-bar" style="padding:30px 0;">
@@ -598,13 +627,15 @@
       <p>Si vous pensez qu'une marque, ou plutôt une réputation, peut se construire avec un logo, un slogan, une identité visuelle ou une campagne publicitaire, ce site ne s'adresse pas à vous.</p>
       <p>Tout cela peut créer l'identité d'une marque. Cela ne peut pas créer sa réputation.</p>
       <p>La réputation n'est pas un projet graphique. Ce n'est pas un produit marketing. Ce n'est pas le résultat d'un atelier créatif. Elle est en règle générale la conséquence de la réalité, de la performance de la marque et de sa compétitivité.</p>
-      <p>Elle naît de ce que la marque fait réellement, de la manière dont elle prend ses décisions, dont elle se comporte envers les gens, ses partenaires et ses propres promesses – et de la façon dont tout cela a résisté à l'épreuve du temps.</p>
+      <details class="viac"><summary>Toute l'histoire</summary>
+<p>Elle naît de ce que la marque fait réellement, de la manière dont elle prend ses décisions, dont elle se comporte envers les gens, ses partenaires et ses propres promesses – et de la façon dont tout cela a résisté à l'épreuve du temps.</p>
       <p>C'est pourquoi la méthode Competitive Reality ne commence pas par la communication. Elle commence par la vérification de la réalité. Elle pose une seule question : existe-t-il seulement quelque chose que le monde devrait croire à propos de cette marque ?</p>
       <p class="maxim-line">Si la réponse est non, la communication n'y pourra probablement rien. Si la réponse est oui, la communication n'est plus le créateur de la réputation. Elle n'en devient que le porteur.</p>
       <p style="margin-top:8px;">La méthode Competitive Reality s'adresse avant tout aux dirigeants d'entreprise, aux directions générales, aux institutions publiques, aux villes, aux régions, aux investisseurs et à d'autres décideurs.</p>
       <p>Elle s'adresse à ceux qui ne cherchent plus seulement une meilleure communication, mais un moyen de bâtir, par la réalité de la marque, une crédibilité plus forte, une position plus solide sur le plan national et international, et un avantage concurrentiel durable.</p>
       <p>Si vous pensez que le mot branding relève du design graphique, vous venez sans doute de tomber sur un site qui affirme tout autre chose.</p>
-    </div>
+    
+</details></div>
   </div>
 </section>
 
@@ -935,7 +966,8 @@
       <h3 class="ref-h3">J'ai d'abord appris à observer.</h3>
       <p class="ref-lede">Le changement ne naît pas dans les rédactions. Il naît dans les institutions et les politiques publiques – et c'est précisément là que ma carrière s'est portée après mes débuts de journaliste.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Voir les jalons (5)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">1991–1996</div>
         <div class="milestone-rail"></div>
@@ -981,13 +1013,15 @@
         </div>
       </div>
     </div>
+</details>
 
     <div class="milestone-chapter reveal" style="margin-top:48px;">
       <div class="step-num">02</div>
       <h3 class="ref-h3">Pourquoi un pays ne peut pas acheter la confiance par la publicité</h3>
       <p class="ref-lede">Une multinationale ne croit pas à une campagne. Elle croit à la due diligence, aux références et au journalisme sérieux. Elle croit à la réputation d'un pays.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Voir les jalons (9)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">2001–2006</div>
         <div class="milestone-rail"></div>
@@ -1070,13 +1104,15 @@
         </div>
       </div>
     </div>
+</details>
 
     <div class="milestone-chapter reveal" style="margin-top:48px;">
       <div class="step-num">03</div>
       <h3 class="ref-h3">Travailler avec la réalité, pas autour d'elle</h3>
       <p class="ref-lede">La mission n'a jamais été d'embellir l'histoire. Elle a été de s'assurer que l'histoire est vraie – et seulement ensuite de la rendre lisible.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Voir les jalons (16)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">2009–2010</div>
         <div class="milestone-rail"></div>
@@ -1221,13 +1257,15 @@
         </div>
       </div>
     </div>
+</details>
 
     <div class="milestone-chapter reveal" style="margin-top:48px;">
       <div class="step-num">04</div>
       <h3 class="ref-h3">Competitive Reality à l'œuvre</h3>
       <p class="ref-lede">Quatre rôles simultanés, une seule méthode – Competitive Reality.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Voir les jalons (7)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">2020</div>
         <div class="milestone-rail"></div>
@@ -1292,13 +1330,15 @@
       </div>
 
     </div>
+</details>
 
     <div class="milestone-chapter reveal" style="margin-top:48px;">
       <div class="step-num">05</div>
       <h3 class="ref-h3">Les fils qui se rejoignent</h3>
       <p class="ref-lede">La présence ne se feint pas devant un auditeur qui n'a que l'ouïe – ni devant un lecteur qui connaît la différence entre le mythe et la réalité.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Voir les jalons (9)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">2017 · septembre</div>
         <div class="milestone-rail"></div>
@@ -1380,6 +1420,7 @@
         </div>
       </div>
     </div>
+</details>
 
     <div class="timeline-epilogue reveal">
       <p>Competitive Reality n'est pas née autour d'une table. Elle s'est construite pendant plus de trois décennies dans des rédactions, des institutions, des projets internationaux, une pratique de conseil et dans la culture. Cette chronologie n'en est pas l'histoire. Elle recense quelques-uns des projets qui ont contribué à sa naissance.</p>
@@ -1626,6 +1667,9 @@
         </div>
       </div>
 
+    </div>
+<details class="viac"><summary>Toutes les interventions (53)</summary>
+    <div class="timeline">
       <div class="milestone">
         <div class="milestone-when">2009</div>
         <div class="milestone-rail"></div>
@@ -2038,7 +2082,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </details>
+</div>
 </section>
 
 <!-- MEDIA & VALIDÁCIA (merged: appearances + independent quotes, one narrative beat) -->

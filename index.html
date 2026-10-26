@@ -513,6 +513,22 @@
 .hero-portret{position:absolute;top:70px;right:3%;height:min(78vh,720px);width:auto;z-index:1;opacity:.88;pointer-events:none;
   -webkit-mask-image:linear-gradient(to right,transparent 0,#000 28%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 28%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);mask-composite:intersect;}
 @media (max-width:1100px){.hero-portret{opacity:.18;right:-20%;}}
+
+/* Odľahčenie: dlhé pasáže sa rozbaľujú (26. 10. 2026) */
+details.viac{margin:6px 0 0;}
+details.viac > summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--ochre);padding:10px 0;border-bottom:1px solid currentColor;}
+details.viac > summary::-webkit-details-marker{display:none;}
+details.viac > summary::after{content:"+";font-size:18px;line-height:1;transition:transform .25s;}
+details.viac[open] > summary::after{transform:rotate(45deg);}
+details.viac[open] > summary{margin-bottom:22px;}
+.hero details.viac > summary{color:var(--ochre-soft);}
+details.viac .reveal{opacity:1 !important;transform:none !important;}
+
+.domeny{background:var(--navy-2);padding:16px 0;border-top:1px solid var(--line-light);}
+.domeny .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px 26px;font-family:var(--font-display);font-size:13px;letter-spacing:.06em;}
+.domeny .lbl{color:rgba(255,255,255,.55);text-transform:uppercase;font-size:11px;letter-spacing:.18em;}
+.domeny a{color:var(--ochre-soft);text-decoration:none;border-bottom:1px solid transparent;}
+.domeny a:hover{border-bottom-color:currentColor;}
 </style>
 </head>
 <body>
@@ -564,19 +580,32 @@
     <div class="hero-body">
       <p>Príliš často sa komunikácia stáva začiatkom procesu, ktorý mal začať zmenou reality.</p>
       <p>Počas troch desaťročí práce – naprieč masmédiami, medzinárodnými vzťahmi, štátnou správou, súkromným sektorom, kultúrou a aj neziskovým prostredím – sme opakovane pozorovali ten istý jav.</p>
-      <p>Tam, kde pod komunikáciou existovala skutočná zmena, reputácia časom vznikla.</p>
+      <details class="viac"><summary>Čítať ďalej</summary>
+<p>Tam, kde pod komunikáciou existovala skutočná zmena, reputácia časom vznikla.</p>
       <p>Tam, kde komunikácia nahrádzala chýbajúcu podstatu, reputácia sa skôr či neskôr rozpadla.</p>
       <p>Metodika Competitive Reality vznikla ako odpoveď na túto skúsenosť.</p>
       <p>Nie je postavená na otázke, <strong>ako komunikovať lepšie.</strong> Začína oveľa skôr. Pýta sa, <strong>či existuje realita, ktorá komunikáciu unesie.</strong></p>
       <p>A či je táto realita konkurencieschopná a dostatočne atraktívna.</p>
       <p>Odpoveď na túto otázku rozhoduje o všetkom, čo príde potom.</p>
-    </div>
+    
+</details></div>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#proof">Pozrieť referenciu →</a>
       <a class="btn btn-ghost" href="#begin">Ako pracujeme →</a>
     </div>
   </div>
 </section>
+
+<div class="domeny">
+  <div class="wrap">
+    <span class="lbl">Kde pôsobím</span>
+    <a href="https://www.brandconsulting.sk/" target="_blank" rel="noopener">www.brandconsulting.sk</a>
+    <a href="https://www.codes.sk/" target="_blank" rel="noopener">www.codes.sk</a>
+    <a href="https://www.brandslovensko30.sk/" target="_blank" rel="noopener">www.brandslovensko30.sk</a>
+    <a href="https://www.fantomopery.sk/" target="_blank" rel="noopener">www.fantomopery.sk</a>
+    <a href="https://www.leroux100.com/" target="_blank" rel="noopener">www.leroux100.com</a>
+  </div>
+</div>
 
 <!-- STATS BAR -->
 <section class="proof" id="stats-bar" style="padding:30px 0;">
@@ -598,13 +627,15 @@
       <p>Ak si myslíte, že značku, respektíve reputáciu možno vytvoriť logom, sloganom, vizuálnou identitou alebo reklamnou kampaňou, tento web nie je určený pre vás.</p>
       <p>To všetko môže vytvoriť identitu značky. Nedokáže to však vytvoriť jej reputáciu.</p>
       <p>Reputácia nie je grafický návrh. Nie je to marketingový produkt. Nie je výsledkom kreatívneho workshopu. Je spravidla dôsledkom reality, brand performance značky a jej konkurencieschopnosti.</p>
-      <p>Vzniká z toho, čo značka skutočne robí, ako sa rozhoduje, ako sa správa k ľuďom, partnerom a vlastným sľubom – a ako toto všetko obstálo v čase.</p>
+      <details class="viac"><summary>Celý príbeh</summary>
+<p>Vzniká z toho, čo značka skutočne robí, ako sa rozhoduje, ako sa správa k ľuďom, partnerom a vlastným sľubom – a ako toto všetko obstálo v čase.</p>
       <p>Metodika Competitive Reality preto nezačína komunikáciou. Začína overovaním reality. Pýta sa jedinú otázku: existuje vôbec niečo, čomu by mal svet o tej či onej značke veriť?</p>
       <p class="maxim-line">Ak odpoveď znie nie, komunikácia zrejme vôbec nepomôže. Ak odpoveď znie áno, komunikácia už nie je tvorcom reputácie. Stáva sa iba jej nositeľom.</p>
       <p style="margin-top:8px;">Metodika Competitive Reality je určená predovšetkým pre CEO, vrcholový manažment, verejné inštitúcie, mestá, regióny, investorov a ďalších lídrov.</p>
       <p>Je určená pre tých, ktorí už nehľadajú len lepšiu komunikáciu, ale spôsob, ako cez realitu značky vybudovať vyššiu dôveryhodnosť, silnejšie postavenie doma aj v zahraničí a dlhodobú konkurenčnú výhodu.</p>
       <p>Ak sa domnievate, že slovo branding je doménou grafického dizajnu, zrejme ste narazili na WEB stránku, ktorá hovorí niečo úplne iné.</p>
-    </div>
+    
+</details></div>
   </div>
 </section>
 
@@ -935,7 +966,8 @@
       <h3 class="ref-h3">Najprv som sa naučil pozorovať.</h3>
       <p class="ref-lede">Zmena nevzniká v redakciách. Vzniká v inštitúciách a vo verejnej politike – a presne tam sa presunula moja kariéra po mojom ranom novinárskom období.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Zobraziť míľniky (5)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">1991–1996</div>
         <div class="milestone-rail"></div>
@@ -981,13 +1013,15 @@
         </div>
       </div>
     </div>
+</details>
 
     <div class="milestone-chapter reveal" style="margin-top:48px;">
       <div class="step-num">02</div>
       <h3 class="ref-h3">Prečo krajina nemôže kúpiť dôveru reklamou</h3>
       <p class="ref-lede">Nadnárodná firma neverí kampani. Verí due diligence, referenciám a serióznej žurnalistike. Verí reputácii krajiny.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Zobraziť míľniky (9)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">2001–2006</div>
         <div class="milestone-rail"></div>
@@ -1070,13 +1104,15 @@
         </div>
       </div>
     </div>
+</details>
 
     <div class="milestone-chapter reveal" style="margin-top:48px;">
       <div class="step-num">03</div>
       <h3 class="ref-h3">Práca s realitou, nie okolo nej</h3>
       <p class="ref-lede">Úlohou nikdy nebolo vylepšiť príbeh. Bolo ňou uistiť sa, že príbeh je pravdivý – a až potom ho urobiť čitateľným.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Zobraziť míľniky (16)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">2009–2010</div>
         <div class="milestone-rail"></div>
@@ -1221,13 +1257,15 @@
         </div>
       </div>
     </div>
+</details>
 
     <div class="milestone-chapter reveal" style="margin-top:48px;">
       <div class="step-num">04</div>
       <h3 class="ref-h3">Competitive Reality v praxi</h3>
       <p class="ref-lede">Štyri súbežné role, jedna metodika – Competitive Reality.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Zobraziť míľniky (7)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">2020</div>
         <div class="milestone-rail"></div>
@@ -1292,13 +1330,15 @@
       </div>
 
     </div>
+</details>
 
     <div class="milestone-chapter reveal" style="margin-top:48px;">
       <div class="step-num">05</div>
       <h3 class="ref-h3">Vlákna, ktoré sa spájajú</h3>
       <p class="ref-lede">Prítomnosť sa nedá predstierať poslucháčovi, ktorý má len sluch – ani čitateľovi, ktorý pozná rozdiel medzi mýtom a skutočnosťou.</p>
     </div>
-    <div class="timeline reveal">
+    <details class="viac"><summary>Zobraziť míľniky (9)</summary>
+<div class="timeline reveal">
       <div class="milestone">
         <div class="milestone-when">2017 · september</div>
         <div class="milestone-rail"></div>
@@ -1380,6 +1420,7 @@
         </div>
       </div>
     </div>
+</details>
 
     <div class="timeline-epilogue reveal">
       <p>Competitive Reality nevznikla za jedným stolom. Vznikala viac než tri desaťročia v redakciách, inštitúciách, v rámci medzinárodných projektov, konzultačnej praxe aj v kultúre. Táto časová os nie je jej históriou. Vymenúva niektoré projekty, ktoré stáli pri jej vzniku.</p>
@@ -1626,6 +1667,9 @@
         </div>
       </div>
 
+    </div>
+<details class="viac"><summary>Všetky vystúpenia (53)</summary>
+    <div class="timeline">
       <div class="milestone">
         <div class="milestone-when">2009</div>
         <div class="milestone-rail"></div>
@@ -2038,7 +2082,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </details>
+</div>
 </section>
 
 <!-- MEDIA & VALIDÁCIA (merged: appearances + independent quotes, one narrative beat) -->

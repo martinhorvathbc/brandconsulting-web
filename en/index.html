@@ -497,6 +497,19 @@
     .reveal{opacity:1;transform:none;transition:none;}
     html{scroll-behavior:auto;}
   }
+
+/* Menu: kompaktné na notebookoch, nad hranicu sa zbalí do tlačidla (26. 10. 2026, po pridaní Public Speaking) */
+@media (min-width:881px) and (max-width:1480px){ .nav{gap:12px} .nav a{font-size:11px;letter-spacing:.2px} }
+@media (max-width:1300px){
+  .nav-toggle{display:flex;margin-left:auto;}
+  nav.nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--navy);flex-direction:column;gap:0;padding:8px 28px 20px;border-bottom:1px solid var(--line-light);margin-left:0;}
+  nav.nav.open{display:flex;}
+  nav.nav a{padding:12px 0;border-top:1px solid var(--line-light);font-size:12px;}
+  nav.nav a:first-child{border-top:none;}
+}
+.milestone-body,.step{min-width:0;overflow-wrap:break-word;hyphens:auto;}
+@media (max-width:480px){ .lang{margin-left:6px;} .lang a{padding:4px 3px;font-size:10px;} .wordmark{font-size:13px;letter-spacing:.5px;} }
+@media (max-width:400px){ .steps{grid-template-columns:1fr;} header .wrap, .bar{padding-left:16px;padding-right:16px;} }
 </style>
 </head>
 <body>
@@ -527,6 +540,7 @@
       <a href="#begin">How We Work</a>
       <a href="#pricing">Pricing</a>
       <a href="#people">Team</a>
+      <a href="#speaking">Public Speaking</a>
       <a href="#media">References</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -796,7 +810,7 @@
 
       <p>Gradually this work grows into more than a methodology – it becomes a platform. In 2020, together with several professionals, he founds Brand Slovensko 30 – not a one-off project, but a lasting professional ecosystem around the theme of Slovakia's reputation. With Simon Anholt he carries into it the same principles he first tested twenty years earlier as a participant in his masterclasses, or as the organizer of an event for the Slovak Tourist Board – now at the regional scale of Central Europe.</p>
 
-      <p>Six years later this ecosystem faces its first major practical test – not at a conference, but at the regional industrial cluster UNICO Innovation Hub in Vizovice, driven by the company UNICO Modular a.s., where reputation is no longer measured by media reach but by whether the region can hold its own in international competitiveness. The trust on which this test rests was not built by a single conference, but by long-term work – part of which included a report by Agence France-Presse that internationally verified the region's story ahead of the planned inaugural conference.</p>
+      <p>Six years later this ecosystem faces its first major practical test – not at a conference, but at the regional industrial cluster UNICO Innovation Hub in Vizovice, driven by the company UNICO Modular a.s., where reputation is no longer measured by media reach but by whether the region can hold its own in international competitiveness. The trust on which this test rests was not built by a single conference, but by long-term work – part of which included a report by Agence France-Presse that internationally verified the region's story.</p>
 
       <p>Alongside this whole experiment, a second, quieter one has been running from the start. In 2008, still as marketing director of the state agency, he collaborates with the legendary voice of Don LaFontaine on the English-language version of a promotional spot about Slovakia. It is the first moment he realizes that a voice alone can carry credibility before content even arrives. He has never stopped being fascinated by this discovery since – in dubbing, in theatre, in the question of what makes human presence distinguishable from the synthetic. It is the same question as in working with an institution's reputation, only in a different register: whether the unit of trust is one listener, or an entire country.</p>
 
@@ -829,11 +843,11 @@
         <ul>
           <li><b>First encounter with voiceover</b>In 2008, while working at the Slovak Tourist Board, he collaborates with the legendary Don LaFontaine – the first moment he realizes that a voice alone can carry credibility before the content even arrives. More here: <a href="https://www1.pluska.sk/spravy/z-domova/anglickej-verzie-dostanete-zimomriavky" target="_blank" rel="noopener">The English version will give you goosebumps</a>.</li>
           <li><b>Dubbing for film and cinema</b>Voice work in Slovak cinema distribution for Disney/Pixar (<em>Inside Out 2</em>) and Marvel (<em>Deadpool &amp; Wolverine</em>, 2024), and in many other films, in smaller roles and choir parts. A small taste here: <a href="https://www.youtube.com/watch?v=pMuy55oyfTM" target="_blank" rel="noopener">The Mandalorian and Grogu (2026) – official trailer (Slovak dub)</a>.</li>
-          <li><b>Fantóm opery – immersive theatre</b>Author of the concept, dramaturge and lead performer (as Erik), premiering 18 October 2026 at Šimák Castle, Pezinok – with the public support of Gaston Leroux's descendants. More here: <a href="https://www.fantomopery.sk/" target="_blank" rel="noopener">Fantóm opery na Zámku – an immersive autumn evening</a>.</li>
+          <li><b>Fantóm opery – immersive theatre</b>Author of the concept, dramaturge and lead performer (as Erik). Premiere on 18 and repeat performance on 19 October 2026 at Šimák Castle, Pezinok, both evenings sold out – with the public support of Gaston Leroux's descendants. More here: <a href="https://www.fantomopery.sk/" target="_blank" rel="noopener">Fantóm opery na Zámku – an immersive autumn evening</a>.</li>
           <li><b>Fairy Tales for Little Crayons</b>For CODES Brand House, creator of the concept behind the philanthropic project that is currently the largest audio project in Slovakia focused on visually impaired children. More here: <a href="https://www.youtube.com/@RozpravkypremalePastelky/videos" target="_blank" rel="noopener">Fairy Tales for Little Crayons – YouTube</a>, the role of Shere Khan here: <a href="https://www.youtube.com/watch?v=2CnjKkrxCaI&amp;t=612s" target="_blank" rel="noopener">The Jungle Book, Part 1</a> (guests: Ivan Romančík, Miroslav Noga, Milan Bahúl, Lukáš Frlajs) and here: <a href="https://www.youtube.com/watch?v=-LoEpnjn39I&amp;t=8s" target="_blank" rel="noopener">The Jungle Book, Part 2</a> (guests: Miroslav Noga, Milan Bahúl, Juraj Predmerský, Dušan Szabó).</li>
           <li><b>Dolby Atmos for blind and visually impaired children</b>For CODES Brand House, creator of the concept behind the first Slovak spatial-audio adaptation for visually impaired children, with the original YouTube channel having logged more than 3.5 million plays. More here: <a href="https://sita.sk/zatvorte-oci-film-zacina-kniha-dzungli-v-dolby-atmos-spoji-vidiacich-a-nevidiacich/" target="_blank" rel="noopener">Close your eyes… the film begins. The Jungle Book in Dolby Atmos brings the sighted and the blind together</a> – SITA.sk.</li>
           <li><b>International rights, first-hand</b>Negotiated the rights to <em>Jesus Christ Superstar</em> directly with Andrew Lloyd Webber's The Really Useful Group, for a production with Ted Neeley.</li>
-          <li><b>UNICO Innovation Hub</b>Alongside the strategic thread through which this regional cluster in Vizovice builds competitiveness (see Milestones), he is here as scriptwriter and dramaturge the author of a separate artistic concept, pairing the iconic voice of Peter Baker with the visual language of Asot Haas – voice, image, music and space united in a single work. More here: <a href="https://www.unicohub.cz/" target="_blank" rel="noopener">Unico Hub</a>.</li>
+          <li><b>UNICO Innovation Hub</b>As scriptwriter and dramaturge, he is the author of a separate artistic concept for the regional cluster in Vizovice, pairing the iconic voice of Peter Baker with the visual language of Asot Haas – voice, image, music and space united in a single work. More here: <a href="https://www.unicohub.cz/" target="_blank" rel="noopener">Unico Hub</a>.</li>
           <li><b>Voice of the Harp</b>A collaboration with the legendary British voiceover artist Peter Baker uniting voice, music and dramaturgy. The first recording was Shakespeare's monologue "All the world's a stage," released on World Voice Day 2024. More here: <a href="https://www.youtube.com/watch?v=zHYa3_GwyLA" target="_blank" rel="noopener">All the world's a stage</a> – W. Shakespeare, Michal Matejčík (composition and harp), voice of Peter Baker.</li>
         </ul>
       </div>
@@ -1250,14 +1264,6 @@
         </div>
       </div>
 
-      <div class="milestone">
-        <div class="milestone-when">2026 · October</div>
-        <div class="milestone-rail"></div>
-        <div class="milestone-body">
-          <h3>UNICO Innovation Hub</h3>
-          <p>Preparation of the inaugural conference of the UNICO Innovation Hub in Vizovice, with Simon Anholt as keynote speaker – an ecosystem that began with the founding of Brand Slovensko 30 now faces its first major practical test at the level of regional development and international competitiveness. The testbed, driven by the company UNICO Modular a.s., builds directly on the trust established four months earlier by the AFP report. Alongside this strategic thread, a separate artistic project runs within the same hub, of which he is the author – a union of voice, image and music (see The Second Discipline).</p>
-        </div>
-      </div>
     </div>
 
     <div class="milestone-chapter reveal" style="margin-top:48px;">
@@ -1343,7 +1349,7 @@
         <div class="milestone-rail"></div>
         <div class="milestone-body">
           <h3>Fantóm opery</h3>
-          <p>Premiere of the immersive adaptation of The Phantom of the Opera at Šimák Castle, Pezinok. The family of Gaston Leroux – through Véronique Leroux – gives the work its public support.</p>
+          <p>Premiere (18 October) and repeat performance (19 October) of the immersive adaptation of The Phantom of the Opera at Šimák Castle, Pezinok, both evenings sold out. The family of Gaston Leroux – through Véronique Leroux – gives the work its public support.</p>
         </div>
       </div>
     </div>
@@ -1509,6 +1515,502 @@
     </div>
 
     <p class="contact-note team-note">If you cannot reach us right away, we are probably working. Email, however, always works, and we usually reply within a few hours. Where possible, we like to arrange a time and meet with one click via ZOOM Workplace. We believe the best conversations happen when we can see and hear each other, and both sides have deliberately set aside time for the online meeting. Under <strong>Contact</strong> you will find each of our Personal Meeting Rooms. <strong>One click – and we see and hear each other.</strong></p>
+  </div>
+</section>
+
+<!-- PUBLIC SPEAKING (verejné vystúpenia 2006-2024) -->
+<section class="speaking" id="speaking" style="background:var(--paper);">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Public Speaking</p>
+      <h2>Public appearances, 2006 – 2024.</h2>
+      <p>Speaking, moderating and lecturing alongside the methodological work – conferences, panels, workshops and seminars over almost two decades.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="milestone">
+        <div class="milestone-when">2006</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Bank of England, London</h3>
+          <p>Presentation “Tourism Industry in Slovakia – Investment Opportunities” to the London financial community. Speaker.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2008</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Competitive Identity Masterclass, Poprad</h3>
+          <p>The first event of its kind in the V4 region, based on Simon Anholt's method. Organizer and moderator as a manager at the Slovak Tourist Board.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2008</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Autumn annual meeting of Zväz hotelov a reštaurácií Slovenska</h3>
+          <p>“How to Bring More Guests to Slovakia – Building a Destination Brand.” Presentation.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2008</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Spring meeting of the Slovak Association of Tour Operators and Travel Agents</h3>
+          <p>“Marketing Strategy of the Slovak Tourist Board.” Presentation.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2008</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>International Club meeting</h3>
+          <p>“Marketing Operations of the Slovak Tourist Board.” Presentation.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2009</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Lecture for the International Republican Institute</h3>
+          <p>“Benefits of City Branding and Promotion.”</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2009</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Lecture for students of the Faculty of Mass Media Communication, UCM Trnava</h3>
+          <p>“Nation Branding – Myth, Reality, Theory, Practice.”</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2009</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Lecture for students of the Faculty of Mass Media Communication, UCM Trnava</h3>
+          <p>“Building the Destination Brand Slovakia – An Introduction.”</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2009</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>TREND HORECA manažment conference, Bratislava</h3>
+          <p>“Tourism Marketing Must Respond to Changing Social and Economic Conditions.” Presentation.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2010</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Global Presentation of the Slovak Republic – Opportunities and Challenges, Bratislava</h3>
+          <p>Comenius University (Institute of European Studies and International Relations) and the Ministry of Foreign Affairs of the Slovak Republic, on the barriers to advancing Nation Branding in Slovakia. Expert presentation.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2011</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>destination@centrope conference, Tomášov</h3>
+          <p>Moderator of panel discussions on cross-border branding of regions, alongside Ján Figeľ and Greg Clark.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2011</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>International conference “Policies for Social Era”, Košice</h3>
+          <p>“Brand and Branding Košice.” Expert lecture and panel co-chairing.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2011</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Creative Industry Forum, Košice</h3>
+          <p>Speaker.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2012</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>CENTROPE workshop</h3>
+          <p>Leading the workshop and panel discussions on regional cooperation and branding.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2012–2014</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Workshops for the Ministry of Foreign and European Affairs of the Slovak Republic, UCM Trnava</h3>
+          <p>Lecturer and workshop leader on the brand of Slovakia, two separate projects.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2013</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Economic Forum, Krynica-Zdrój (Poland)</h3>
+          <p>“Nation Branding: Remedy for Crisis.” Lecture and panel discussion at one of the most important economic forums in Central Europe.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2013</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Scientific conference of the Faculty of Mass Media Communication, UCM Trnava</h3>
+          <p>“Social Responsibility in the Regions.” Participation and lecture.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2013</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Autumn Hoteliers' Meeting 2013, Horný Smokovec</h3>
+          <p>“If You Are Not a Brand, You Are Just a Commodity…” Lecture.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2013</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“Creating Brand Slovakia” conference, American Chamber of Commerce</h3>
+          <p>Speaker.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2013</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>TEDxTrnava, Trnava</h3>
+          <p>Speaker.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2014</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Innovation Day Robotec 2014</h3>
+          <p>Speaker; topic: innovation and the automotive industry.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2014</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“Connect – Branding Slovakia”</h3>
+          <p>Lecture on the theory, myths and practice of branding.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2014</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Presentation to the General Assembly of the Bratislava Tourist Board</h3>
+          <p>Results of the Bratislava Tourist Board.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2014–2015</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>WTM London</h3>
+          <p>Press conference on Bratislava as a tourist destination at World Travel Market in London.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2015</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Marketing Masterclass, UCM Trnava</h3>
+          <p>Co-founder of a series of masterclasses on marketing and branding with visiting international speakers.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2015</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>TREND HORECA Conference / Horeca Trend Management, Bratislava</h3>
+          <p>Speaker and presentation on the Slovak Presidency of the Council of the EU.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2015</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Euro-Atlantic Center – Place Branding workshop</h3>
+          <p>Workshop.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2015</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Slovak-Ukrainian Forum</h3>
+          <p>Lecture on the principles of Nation and Place Branding.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2016</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Lecture for Superbrands Slovakia, Bratislava</h3>
+          <p>Speaker.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2017</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>TEDxUMB, Banská Bystrica</h3>
+          <p>Speaker. The first university TEDx in Slovakia.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2019</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>SIEA conference / INOVUJME.sk project, Belgrade (Serbia)</h3>
+          <p>Speaker on brand building and innovation.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2019</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>SIEA conference, Novi Sad (Serbia)</h3>
+          <p>“How to build brand awareness and awareness on innovation.” Speaker.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2019</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Smart Cities Workshop (OECD), Hotel Bôrik, Bratislava</h3>
+          <p>Expert lead and moderator of a section and a panel.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2020</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>ITAPA Congress, “Cities of the Future” panel</h3>
+          <p>Speaker and panelist.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">ongoing since 2020</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Podcast “Place as the Brand”</h3>
+          <p>Author, anchorman and host; topic: place branding and Competitive Identity.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2022</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Online conference “Improving Innovation Policies in Industry 4.0” (SBA + SIEA), Bratislava</h3>
+          <p>Moderator.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2022</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Inteligentná Trnava – expert conference</h3>
+          <p>Moderator.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2023</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Event on the hydrogen valley, Košice Self-Governing Region and the National Hydrogen Association of Slovakia, Košice</h3>
+          <p>Moderator at the invitation of chairman Ján Weiterschütz.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2023</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Guest lectures, UMB Banská Bystrica and UPJŠ Prešov</h3>
+          <p>Lecturer; topic: Competitive Identity.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2023</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Lecture, Comenius University Bratislava</h3>
+          <p>Speaker / keynote; topic: reputation.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2023</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Lecture for the faculty of Prof. Dagmar Cagáňová</h3>
+          <p>“Why a Country's Brand Matters.” Speaker.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2023</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Fairy Tales for Little Crayons (charity project)</h3>
+          <p>Author, scriptwriter and host.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">2024</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Competitive Identity Masterclass, Historic Building of the National Council of the Slovak Republic, Bratislava</h3>
+          <p>Dramaturge, scriptwriter and host, with Simon Anholt and Robert Govers taking part.</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <h3 class="ref-h3 reveal" style="margin-top:48px;">Lecturing and seminars</h3>
+    <p class="ref-lede reveal">Seminars and courses for small and medium-sized entrepreneurs, in cooperation with the Slovak Business Agency, 2018 – 2019.</p>
+    <div class="timeline reveal">
+      <div class="milestone">
+        <div class="milestone-when">April 2018</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“Business Skills Course – Marketing”, KM Office, Trnava</h3>
+          <p>Lecturer.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">April 2018</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“How to Successfully Manage Family and Business”, Centrum pomoci pre rodinu, Trnava</h3>
+          <p>Lecturer.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">April 2018</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“Visual Communication in Business – the HoReCa Segment”, Súkromná stredná škola Gos-Sk, Trnava</h3>
+          <p>Lecturer.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">May 2018</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“Visual Communication in Business – the HoReCa Segment”, Súkromná stredná škola Gos.Sk, Trnava</h3>
+          <p>Lecturer.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">August 2018</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“The Brand Is Everything – Brand Building in the HoReCa Segment”, KOK Duna Restaurant, Veľký Meder</h3>
+          <p>Lecturer / presentation.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">October 2018</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“Visual Communication in Business – the HoReCa Segment”, Súkromná stredná škola Gos-sk, Senica</h3>
+          <p>Lecturer.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">February 2019</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“Brand Yourself”, SOŠ obchodu a služieb, Trnava</h3>
+          <p>Lecturer.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">February 2019</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“Business Image Matters”, SOŠ obchodu a služieb, Piešťany</h3>
+          <p>Lecturer.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">February 2019</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>“Make Your Business Visible – Build a Brand” (expert seminar)</h3>
+          <p>Lecturer.</p>
+        </div>
+      </div>
+
+      <div class="milestone">
+        <div class="milestone-when">May 2019</div>
+        <div class="milestone-rail"></div>
+        <div class="milestone-body">
+          <h3>Business Skills Course, Aquapolis Business Centrum, NPC, Trnava</h3>
+          <p>Lecturer.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

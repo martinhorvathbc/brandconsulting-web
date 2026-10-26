@@ -1,0 +1,5 @@
+# Exohosting: všetko na https://brandconsulting.sk (bez www); TLS končí na proxy, preto X-Forwarded-Proto
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://brandconsulting.sk/$1 [R=301,L]

@@ -529,6 +529,472 @@ details.viac .reveal{opacity:1 !important;transform:none !important;}
 .domeny .lbl{color:rgba(255,255,255,.55);text-transform:uppercase;font-size:11px;letter-spacing:.18em;}
 .domeny a{color:var(--ochre-soft);text-decoration:none;border-bottom:1px solid transparent;}
 .domeny a:hover{border-bottom-color:currentColor;}
+
+/* ==== V2 DIZAJN – ľahšie, grafickejšie, v duchu Fantóm V2 (26. 10. 2026) ==== */
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:300;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-300-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:300;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-ext-300-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:300;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-300-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:300;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-ext-300-italic.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-400-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-ext-400-italic.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Cormorant Garamond";font-style:italic;font-weight:500;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-ext-500-italic.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-ext-600-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1E00-1E9F,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113}
+
+:root{
+  --ink-deep:#0B1218;
+  --ivory:#ECE4D4;
+  --gold:#CFA968;
+  --gold-line:rgba(207,169,104,.42);
+  --font-disp2:"Cormorant Garamond","Newsreader",Georgia,serif;
+  --ease2:cubic-bezier(.22,1,.36,1);
+  --sec-pad:clamp(84px,10vw,144px);
+  --grain:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+html,body{overflow-x:clip;}
+body{background:var(--paper-2);}
+section{padding:var(--sec-pad) 0;position:relative;}
+.scroll-progress{height:2px;background:linear-gradient(90deg,var(--ochre),var(--gold));}
+
+/* -- hlavička: tichšia, tmavšia -- */
+header.top{background:rgba(11,18,24,.78);border-bottom:1px solid rgba(207,169,104,.16);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);}
+.wordmark{font-weight:600;letter-spacing:.08em;}
+nav.nav a{letter-spacing:.14em;font-weight:500;color:rgba(236,228,212,.66);position:relative;}
+nav.nav a:hover{color:var(--ivory);}
+@media (min-width:1301px){
+  nav.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1px;background:var(--gold);transition:right .4s var(--ease2);}
+  nav.nav a:hover::after{right:0;}
+}
+
+/* -- typografia: veľký elegantný serif pre nadpisy -- */
+.eyebrow{font-size:11px;letter-spacing:.32em;font-weight:600;display:flex;align-items:center;gap:14px;}
+.eyebrow::before{content:"";flex:0 0 34px;height:1px;background:currentColor;opacity:.7;}
+.sec-head{max-width:58ch;margin-bottom:clamp(48px,6vw,80px);}
+.sec-head h2,.about h2,.contact h2{font-family:var(--font-disp2);font-weight:500;
+  font-size:clamp(36px,5.2vw,68px);line-height:1.02;letter-spacing:-.012em;margin-bottom:28px;}
+.sec-head h2 em,.about h2 em{font-style:italic;color:var(--ochre);}
+.sec-head p{font-size:clamp(18px,1.6vw,20px);line-height:1.62;color:#4a463f;}
+.ref-h3{font-family:var(--font-disp2);font-weight:500;font-size:clamp(28px,3.4vw,42px);line-height:1.08;}
+.ref-lede{color:#4a463f;}
+.maxim-line,.method .maxim-line,.pricing .maxim-line{border-top:1px solid var(--gold-line) !important;}
+
+/* -- veľké obrysové rímske čísla nad sekciami -- */
+body{counter-reset:v2sec;}
+section .sec-head{counter-increment:v2sec;position:relative;}
+section .sec-head::before{content:counter(v2sec,upper-roman);display:block;font-family:var(--font-disp2);
+  font-weight:300;font-size:clamp(64px,8vw,112px);line-height:.8;letter-spacing:.02em;margin:0 0 26px -4px;
+  color:transparent;-webkit-text-stroke:1px var(--gold-line);opacity:.9;}
+
+/* -- hero: kinematografická tma -- */
+.hero{background:radial-gradient(90% 70% at 78% 18%,rgba(207,169,104,.10),transparent 62%),
+  linear-gradient(180deg,#0B1218 0%,#121F29 58%,var(--navy) 100%);
+  padding:clamp(110px,14vw,180px) 0 clamp(96px,11vw,150px);}
+.hero::after{background:var(--grain);opacity:1;}
+.hero::before{color:rgba(236,228,212,.028);font-family:var(--font-disp2);font-weight:300;}
+.hero-name{letter-spacing:.06em;font-weight:500;color:rgba(236,228,212,.74);}
+.hero-name em{color:var(--gold);}
+.hero-tagline{font-family:var(--font-disp2);font-size:clamp(18px,1.9vw,22px);color:rgba(236,228,212,.56);}
+.hero h1{font-family:var(--font-disp2);font-weight:500;font-size:clamp(40px,5.8vw,82px);line-height:1;
+  letter-spacing:-.018em;max-width:15.5em;color:var(--ivory);margin-bottom:46px;}
+.hero h1 em{font-family:var(--font-disp2);color:var(--gold);font-weight:400;}
+.maxim{font-family:var(--font-disp2);font-size:clamp(23px,2.8vw,32px);}
+.maxim .strong{border-bottom:1px solid var(--gold);}
+.maxim-tr{letter-spacing:.3em;font-size:11px;color:rgba(236,228,212,.44);}
+.hero-body{max-width:56ch;}
+.hero-body p{color:rgba(236,228,212,.8);line-height:1.62;}
+.hero-portret{opacity:.9;filter:sepia(.08) contrast(1.02);}
+.js .hero-portret{animation:v2portret 2.4s var(--ease2) both;}
+@keyframes v2portret{from{opacity:0;transform:translateY(16px) scale(1.02);}}
+
+/* -- tlačidlá: tenké, rozostúpené verzálky -- */
+.btn{font-size:12px;letter-spacing:.22em;text-transform:uppercase;padding:17px 30px;border-radius:0;transition:background .35s var(--ease2),color .35s,border-color .35s,transform .35s var(--ease2);}
+.btn-primary{background:var(--gold);color:#0B1218;}
+.btn-primary:hover{background:var(--ivory);transform:translateY(-2px);}
+.btn-ghost{border-color:var(--gold-line);color:var(--ivory);}
+.btn-ghost:hover{border-color:var(--gold);background:rgba(207,169,104,.08);}
+
+/* -- pás domén a čísla -- */
+.domeny{background:#0F1A22;padding:18px 0;border-top:1px solid rgba(207,169,104,.14);}
+.domeny a{color:var(--gold);}
+.proof{background:#0F1A22 !important;padding:clamp(44px,5vw,64px) 0 !important;border-top:1px solid rgba(207,169,104,.12);
+  border-bottom:1px solid rgba(207,169,104,.12);}
+.proof-item{border-left:1px solid rgba(207,169,104,.18);padding:4px 26px;}
+.stat-num{font-family:var(--font-disp2);font-weight:400;font-size:clamp(32px,3.4vw,48px);line-height:1;
+  letter-spacing:-.01em;color:var(--gold);margin-bottom:12px;}
+.stat-lbl{font-size:10.5px;letter-spacing:.2em;color:rgba(236,228,212,.6);line-height:1.6;}
+
+/* -- rytmus sekcií: svetlá – papier – tma -- */
+#who{background:var(--paper-2) !important;}
+#who .about-body{max-width:640px;}
+#who .about-body > p:first-child{font-family:var(--font-disp2);font-size:clamp(25px,2.8vw,34px);line-height:1.28;color:var(--ink);font-weight:500;}
+.why{background:var(--ink-deep);color:var(--ivory);overflow:hidden;}
+.why::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 80% at 15% 0%,rgba(207,169,104,.12),transparent 60%),var(--grain);}
+.why .wrap{position:relative;}
+.why h2{font-family:var(--font-disp2);font-weight:400;font-size:clamp(36px,5vw,64px);line-height:1.08;color:var(--ivory);}
+.why .lead-line{font-family:var(--font-disp2);color:var(--gold);font-style:italic;font-size:clamp(24px,2.8vw,32px);}
+.why p{color:rgba(236,228,212,.8);}
+.why .maxim-line{color:var(--ivory);font-family:var(--font-disp2);font-size:clamp(23px,2.6vw,30px);}
+.why .eyebrow{color:var(--gold);}
+
+.method{background:var(--paper);}
+#difference{background:var(--paper-2) !important;}
+.steps{border-top:none;gap:clamp(18px,2.4vw,34px);}
+.step{border-left:none;padding:26px 0 0;border-top:1px solid var(--gold-line);position:relative;}
+.step:first-child{padding-left:0;}
+.step h3{font-family:var(--font-disp2);font-size:24px;font-weight:500;}
+.step p{font-size:15.5px;line-height:1.62;}
+.step-num{font-family:var(--font-disp2);font-weight:400;font-size:30px;letter-spacing:0;color:var(--ochre);margin-bottom:12px;line-height:1;}
+.mi-headline{font-family:var(--font-disp2);font-weight:500;font-size:clamp(28px,3.2vw,40px);line-height:1.1;}
+.mi-block{padding:clamp(28px,3.6vw,48px) clamp(22px,3.6vw,48px);border-top:none;}
+.mi-block-a{background:var(--paper-2);}
+.mi-block-c{background:#E6E0D5;}
+.mi-block-b{background:var(--ink-deep);background-image:var(--grain);}
+.mi-block-label{border-radius:0;letter-spacing:.24em;font-size:10px;padding:6px 12px;}
+.mi-step h4{font-family:var(--font-disp2);font-size:22px;}
+.mi-step-num{font-family:var(--font-disp2);font-weight:400;font-size:24px;letter-spacing:0;}
+
+/* -- feature karty (AFP dôkaz) -- */
+.feature{background:var(--paper);}
+.feature-card{border-radius:0;background:var(--ink-deep);background-image:var(--grain);box-shadow:0 40px 80px -40px rgba(11,18,24,.55);}
+.feature-text{padding:clamp(36px,4.6vw,64px);}
+.feature-text .case-tag{font-family:var(--font-display);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);display:block;}
+.feature-text h3{font-family:var(--font-disp2);font-weight:500;font-size:clamp(30px,3.4vw,46px);line-height:1.04;color:var(--ivory);margin:16px 0 24px;}
+.feature-text p{color:rgba(236,228,212,.8);line-height:1.62;}
+.feature-text .pipeline{color:var(--gold);letter-spacing:.04em;}
+.feature-text .result{border-top:1px solid var(--gold-line);}
+.feature-media img{filter:saturate(.92) contrast(1.03);transition:transform 1.6s var(--ease2);}
+.feature-card:hover .feature-media img{transform:scale(1.03);}
+.feature-media::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(11,18,24,.55),transparent 38%);}
+
+/* -- O mne -- */
+.about{background:var(--paper-2);}
+.about-lead{font-family:var(--font-disp2);font-size:clamp(25px,2.9vw,34px);line-height:1.3;font-weight:500;}
+.about-body p{font-size:18px;line-height:1.75;color:#3a3732;}
+.about-close{font-family:var(--font-disp2);font-size:clamp(24px,2.8vw,32px);border-top:1px solid var(--gold-line);}
+
+/* -- hlas -- */
+.voice{background:var(--paper);}
+.voice-grid h2{font-family:var(--font-disp2) !important;font-weight:500 !important;font-size:clamp(36px,4.6vw,60px) !important;line-height:1.02 !important;}
+.voice li{border-top:1px solid var(--line);}
+.voice li b{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ochre);margin-bottom:6px;}
+.voice-upload-box{border:none;border-top:1px solid var(--gold-line);background:transparent;padding:24px 0 0;}
+.voice-video-embed{border-radius:0 !important;box-shadow:0 30px 60px -30px rgba(11,18,24,.5);}
+
+/* ===== FANTÓM – kinematografický pás cez celú šírku ===== */
+#fantom{background:#06080B;color:var(--ivory);padding:clamp(110px,13vw,190px) 0;overflow:hidden;isolation:isolate;
+  min-height:min(100vh,980px);display:flex;align-items:center;}
+#fantom::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:var(--grain);}
+#fantom::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;z-index:3;
+  background:linear-gradient(90deg,transparent,var(--gold-line) 30%,var(--gold-line) 70%,transparent);}
+#fantom > .wrap{width:100%;max-width:1360px;position:static;}
+#fantom .sec-head{position:relative;z-index:4;max-width:min(640px,52%);margin-bottom:46px;}
+#fantom .sec-head::before{-webkit-text-stroke:1px rgba(207,169,104,.55);}
+#fantom .eyebrow{color:var(--gold);}
+#fantom .sec-head h2{font-weight:400;font-size:clamp(46px,6.6vw,104px);line-height:.96;letter-spacing:-.02em;color:var(--ivory);margin:0;}
+#fantom .sec-head h2 em{display:block;color:var(--gold);font-weight:300;margin-top:.12em;}
+#fantom .feature-card{display:block;background:none;box-shadow:none;overflow:visible;}
+#fantom .feature-card.reveal{transform:none !important;}
+#fantom .feature-text{position:relative;z-index:4;padding:0;max-width:min(560px,46%);}
+#fantom .feature-text .case-tag{display:inline-flex;align-items:center;gap:14px;font-size:10.5px;letter-spacing:.3em;color:var(--gold);}
+#fantom .feature-text .case-tag::before{content:"";width:46px;height:1px;background:var(--gold);}
+#fantom .feature-text h3{font-style:italic;font-weight:400;font-size:clamp(30px,3.2vw,46px);color:var(--ivory);margin:22px 0 30px;}
+#fantom .feature-text p{font-size:16.5px;line-height:1.72;color:rgba(236,228,212,.66);}
+#fantom .feature-text .result{border-top:none;margin:38px 0 30px;padding:4px 0 4px 26px;border-left:1px solid var(--gold);}
+#fantom .feature-text .result b{font-family:var(--font-disp2);font-style:italic;font-weight:400;font-size:clamp(23px,2.3vw,31px);line-height:1.26;color:var(--ivory);}
+#fantom .feature-text .about-more{font-family:var(--font-display);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:rgba(236,228,212,.5);}
+#fantom .feature-text .about-more a{color:var(--gold) !important;border-bottom:1px solid var(--gold-line);letter-spacing:.2em;}
+#fantom .feature-media{position:absolute;z-index:1;top:0;right:0;bottom:0;width:min(60vw,1100px);min-height:0;background:#06080B;}
+#fantom .feature-media::after{background:linear-gradient(90deg,#06080B 0%,rgba(6,8,11,.82) 18%,rgba(6,8,11,.12) 52%,transparent 70%),
+  linear-gradient(0deg,#06080B 0%,transparent 22%),linear-gradient(180deg,#06080B 0%,transparent 16%);}
+#fantom .feature-media img{object-position:62% 40%;opacity:.92;transform:scale(1.08);transition:transform 3.2s var(--ease2),opacity 2s;}
+#fantom .feature-card.in .feature-media img{transform:scale(1);}
+#fantom .feature-card:hover .feature-media img{transform:scale(1);}
+
+/* -- Fantóm: hlas Véronique Leroux, citovaný pás -- */
+#fantom{display:block;min-height:0;padding-bottom:0;}
+.fantom-hlas{position:relative;z-index:5;margin-top:clamp(90px,10vw,150px);padding:clamp(70px,8vw,120px) 0 clamp(110px,12vw,180px);
+  background:linear-gradient(180deg,rgba(6,8,11,0) 0,#06080B 110px);}
+.fantom-hlas .wrap{max-width:1240px;}
+.fh-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(48px,5vw,80px) clamp(36px,5vw,90px);}
+.fq{margin:0;position:relative;padding-top:58px;border-top:1px solid var(--gold-line);}
+.fq::before{content:"\201C";position:absolute;top:2px;left:-4px;font-family:var(--font-disp2);font-size:96px;line-height:1;color:var(--gold);opacity:.75;}
+.fq p{font-family:var(--font-disp2);font-style:italic;font-weight:400;font-size:clamp(23px,2.2vw,31px);line-height:1.32;color:rgba(236,228,212,.88);margin:0;}
+.fq-3{grid-column:1 / -1;text-align:center;border-top:none;padding-top:clamp(70px,7vw,96px);max-width:980px;margin:0 auto;}
+.fq-3::before{left:50%;transform:translateX(-50%);font-size:clamp(120px,12vw,170px);top:-26px;opacity:.6;}
+.fq-3 p{font-size:clamp(28px,3.6vw,50px);line-height:1.2;color:var(--ivory);font-weight:300;}
+.fq-who{margin:clamp(40px,4vw,56px) auto 0;text-align:center;font-family:var(--font-display);font-size:11px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--gold);display:flex;align-items:center;justify-content:center;gap:18px;max-width:900px;line-height:1.7;}
+.fq-who::before,.fq-who::after{content:"";flex:0 0 46px;height:1px;background:var(--gold-line);}
+@media (max-width:760px){
+  .fh-grid{grid-template-columns:minmax(0,1fr);}
+  .fq-3{text-align:left;}
+  .fq-3::before{left:-4px;transform:none;}
+  .fq-who{justify-content:flex-start;text-align:left;}
+  .fq-who::after{display:none;}
+  .fq-who::before{flex-basis:28px;}
+}
+
+/* ===== V umení a produkcii – obrazová galéria ===== */
+.kult-zdroj{margin:14px 0 0 !important;font-family:var(--font-display);font-size:11.5px !important;letter-spacing:.06em;line-height:1.6 !important;color:rgba(236,228,212,.5) !important;}
+.kult-zdroj a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-line);transition:border-color .3s;}
+.kult-zdroj a:hover{border-bottom-color:var(--gold);}
+.kultura{background:#0E151C;color:var(--ivory);overflow:hidden;}
+.kultura::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(55% 50% at 90% 0%,rgba(207,169,104,.09),transparent 60%),var(--grain);}
+.kultura .wrap{position:relative;max-width:1280px;}
+.kultura .eyebrow{color:var(--gold);}
+.kultura .sec-head h2{color:var(--ivory);font-weight:400;}
+.kultura .sec-head::before{-webkit-text-stroke:1px rgba(207,169,104,.5);}
+.kult-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(44px,5vw,72px) clamp(22px,2.6vw,40px);}
+.kult-card{margin:0;display:flex;flex-direction:column;min-width:0;}
+.kult-img{position:relative;aspect-ratio:4/5;overflow:hidden;background:#06080B;}
+.kult-img::after{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(0deg,rgba(6,8,11,.45),transparent 40%);box-shadow:inset 0 0 0 1px rgba(207,169,104,.14);transition:opacity .8s;}
+.kult-img img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(1.04);
+  transform:scale(1.02);transition:transform 1.6s var(--ease2),filter 1s;}
+.kult-card:hover .kult-img img{transform:scale(1.07);filter:saturate(1) contrast(1.04);}
+.kult-card:hover .kult-img::after{opacity:.5;}
+.kult-card figcaption{padding-top:22px;border-top:1px solid transparent;}
+.kult-rok{display:inline-flex;align-items:center;gap:12px;font-family:var(--font-disp2);font-style:italic;font-size:21px;color:var(--gold);line-height:1;}
+.kult-rok::before{content:"";width:28px;height:1px;background:var(--gold-line);}
+.kult-card h3{font-family:var(--font-disp2);font-weight:500;font-size:clamp(23px,2vw,27px);line-height:1.12;color:var(--ivory);margin:14px 0 12px;overflow-wrap:break-word;}
+.kult-card p{font-size:15.5px;line-height:1.66;color:rgba(236,228,212,.68);margin:0;}
+.kult-foto{display:block;margin-top:14px;font-family:var(--font-display);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(236,228,212,.42);}
+
+/* -- míľniky: viac vzduchu -- */
+#work{background:var(--paper-2);}
+.milestone-chapter{margin:clamp(56px,7vw,96px) 0 18px;}
+.milestone-chapter .step-num{font-size:48px;font-weight:300;color:transparent;-webkit-text-stroke:1px var(--ochre);}
+.milestone{padding-bottom:56px;grid-template-columns:120px 20px 1fr;}
+.milestone-when{font-family:var(--font-disp2);font-style:italic;font-weight:500;font-size:21px;letter-spacing:0;color:var(--ochre);padding-top:0;line-height:1.2;}
+.milestone-rail::before{width:9px;height:9px;background:var(--paper-2);border:1px solid var(--ochre);top:6px;box-shadow:0 0 0 4px var(--paper-2);}
+.milestone-rail::after{bottom:-56px;background:var(--gold-line);top:16px;}
+.milestone-body h3{font-family:var(--font-disp2);font-weight:500;font-size:clamp(24px,2.4vw,29px);line-height:1.12;margin-bottom:10px;}
+.milestone-body p{font-size:16.5px;line-height:1.7;max-width:62ch;}
+.timeline-epilogue{border-top:1px solid var(--gold-line);}
+.timeline-epilogue p{font-family:var(--font-disp2);font-size:clamp(25px,2.8vw,34px);line-height:1.3;}
+.speaking .milestone-rail::before{background:var(--paper);box-shadow:0 0 0 4px var(--paper);}
+
+/* -- začiatok spolupráce, cenník -- */
+.begin{background:var(--paper);}
+.pricing{background:var(--paper-2);}
+.begin-step{border-top:1px solid var(--line);padding:34px 0;}
+.begin-mark{font-family:var(--font-disp2);font-size:30px;color:var(--ochre);}
+.begin-step h3{font-family:var(--font-disp2);font-weight:500;font-size:clamp(25px,2.4vw,30px);}
+.begin-cta{border-top:1px solid var(--gold-line);}
+.begin-cta-punch{font-family:var(--font-disp2);font-size:clamp(26px,2.8vw,34px);}
+.begin .btn-ghost,.pricing .btn-ghost,.people .btn-ghost{color:var(--ink);border-color:var(--ochre);}
+
+/* -- ľudia -- */
+.people{background:var(--paper);}
+.person{gap:clamp(30px,5vw,72px);}
+.person + .person{border-top:1px solid var(--gold-line);margin-top:80px;padding-top:80px;}
+.person h3{font-family:var(--font-disp2);font-weight:500;font-size:clamp(34px,3.8vw,50px);line-height:1;}
+.person-role{letter-spacing:.28em;font-size:10.5px;}
+.person .title{font-family:var(--font-disp2);font-size:clamp(23px,2.2vw,27px);line-height:1.35;}
+.portrait{background:var(--ink-deep);overflow:visible;}
+.portrait::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--gold-line);z-index:-1;pointer-events:none;}
+.portrait img{filter:grayscale(.15) contrast(1.03);}
+.person .meta,.person .person-close{border-top:1px solid var(--gold-line);}
+
+/* -- vystúpenia, médiá -- */
+.speaking{background:var(--paper-2) !important;}
+.speaking .milestone-rail::before{background:var(--paper-2);box-shadow:0 0 0 4px var(--paper-2);}
+.media{background:var(--paper);}
+.media-grid{background:none;border:none;gap:clamp(36px,4vw,56px) clamp(24px,3vw,44px);}
+.media-item{background:none;padding:0;}
+.media-item.has-photo{padding:0;}
+.media-photo{aspect-ratio:3/2;transition:transform 1.4s var(--ease2),filter .8s;filter:saturate(.9);}
+.media-item.has-photo{overflow:hidden;}
+.media-item.has-photo .media-photo{margin-bottom:0;}
+.media-item:hover .media-photo{transform:scale(1.035);filter:saturate(1);}
+.media-body{padding:22px 0 0;position:relative;background:var(--paper);}
+.media-top{border-top:1px solid var(--gold-line);padding-top:16px;}
+.media-outlet{font-family:var(--font-disp2);font-weight:500;font-size:26px;line-height:1.1;}
+.media-year{font-family:var(--font-disp2);font-style:italic;font-size:20px;color:var(--ochre);}
+.media-desc{min-height:0;line-height:1.62;}
+.media-note{letter-spacing:.24em;font-size:10.5px;}
+
+/* -- citáty -- */
+.qgrid{background:none;border:none;gap:2px;margin-top:clamp(64px,8vw,110px);}
+.quote{background:var(--ink-deep);background-image:var(--grain);padding:clamp(34px,4vw,54px);position:relative;}
+.quote::before{content:"\201E";position:absolute;top:-6px;left:clamp(26px,3vw,44px);font-family:var(--font-disp2);font-size:110px;line-height:1;color:rgba(207,169,104,.28);pointer-events:none;}
+.quote p{font-family:var(--font-disp2);font-size:clamp(21px,1.9vw,25px);line-height:1.36;color:var(--ivory);position:relative;}
+.quote .who{color:var(--gold);letter-spacing:.14em;text-transform:uppercase;font-size:11px;}
+.quote .who span{text-transform:none;letter-spacing:.02em;font-size:13px;}
+.quote.lead{box-shadow:inset 0 1px 0 var(--gold);}
+
+/* -- pätička -- */
+footer.contact{background:#0B1218;background-image:radial-gradient(70% 60% at 85% 0%,rgba(207,169,104,.10),transparent 60%),var(--grain);
+  padding:clamp(100px,12vw,170px) 0 46px;position:relative;}
+footer.contact::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold-line) 30%,var(--gold-line) 70%,transparent);}
+.contact h2{font-size:clamp(40px,6vw,84px);color:var(--ivory);max-width:16ch;}
+.contact .lede{color:rgba(236,228,212,.72);}
+.contact-cols{border-top:1px solid rgba(207,169,104,.22);padding-top:48px;gap:clamp(30px,4vw,64px);}
+.ccol h4{color:var(--gold);letter-spacing:.28em;font-size:10.5px;}
+.ccol .name{font-family:var(--font-disp2);font-size:24px;font-weight:500;}
+.ccol p{color:rgba(236,228,212,.78);}
+.ccol a{border-bottom-color:rgba(207,169,104,.3);}
+.footnote{border-top:1px solid rgba(207,169,104,.14);color:rgba(236,228,212,.42);letter-spacing:.12em;}
+
+/* -- rozbaľovanie -- */
+details.viac > summary{font-size:11px;letter-spacing:.26em;border-bottom:1px solid var(--gold-line);gap:14px;transition:color .3s,border-color .3s;}
+details.viac > summary:hover{border-bottom-color:currentColor;}
+details.viac > summary::after{font-family:var(--font-disp2);font-size:24px;font-weight:300;}
+details.viac[open] > *:not(summary){animation:v2open .7s var(--ease2) both;}
+@keyframes v2open{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+
+/* -- pomalšie odhalenie -- */
+.js .reveal{transform:translateY(30px);transition:opacity 1.2s var(--ease2),transform 1.2s var(--ease2);}
+.to-top{background:var(--ink-deep);border-color:var(--gold-line);color:var(--gold);}
+
+/* -- responzívne -- */
+@media (max-width:1100px){
+  #fantom{display:block;min-height:0;padding-top:0;}
+  #fantom .feature-media{position:relative;width:auto;height:min(92vw,620px);margin:0 calc(50% - 50vw) 0;top:auto;right:auto;bottom:auto;}
+  #fantom .feature-media img{position:absolute;inset:0;}
+  #fantom .feature-media::after{background:linear-gradient(0deg,#06080B 0%,rgba(6,8,11,.4) 30%,transparent 55%),linear-gradient(180deg,#06080B 0%,transparent 14%);}
+  #fantom > .wrap{display:flex;flex-direction:column;}
+  #fantom .feature-card{display:contents;}
+  #fantom .feature-media{order:0;}
+  #fantom .sec-head{order:1;max-width:none;margin-top:-80px;}
+  #fantom .feature-text{order:2;max-width:640px;}
+  .kult-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:640px){
+  .kult-grid{grid-template-columns:minmax(0,1fr);}
+}
+@media (max-width:880px){
+  .steps{gap:0 22px;}
+  .step{padding-top:22px;margin-top:10px;}
+  .mi-step{border-top-color:var(--gold-line);}
+  .milestone{grid-template-columns:76px 14px 1fr;column-gap:14px;padding-bottom:44px;}
+  .milestone-rail::after{bottom:-44px;}
+  .milestone-when{font-size:17px;}
+  .feature-media::after{background:linear-gradient(0deg,rgba(11,18,24,.5),transparent 40%);}
+  .portrait::after{inset:10px -10px -10px 10px;}
+  .media-grid{gap:48px;}
+}
+@media (max-width:560px){
+  .proof-item{border-left:none;border-top:1px solid rgba(207,169,104,.18);padding:16px 0 4px;}
+  .stat-num{font-size:30px;}
+  section .sec-head::before{font-size:56px;margin-bottom:18px;}
+  .hero h1{font-size:clamp(34px,10vw,44px);}
+  #fantom .sec-head h2{font-size:clamp(40px,12vw,56px);}
+  .contact h2{font-size:clamp(36px,11vw,52px);}
+  .quote::before{font-size:80px;}
+}
+@media (prefers-reduced-motion:reduce){
+  .js .hero-portret{animation:none;}
+  .js .reveal{transform:none;transition:none;}
+  #fantom .feature-media img,.media-photo,.feature-media img{transition:none;transform:none !important;}
+  details.viac[open] > *:not(summary){animation:none;}
+}
+
+/* -- Fantóm: obraz viazaný na textový blok, galéria z predstavenia -- */
+#fantom > .wrap{position:relative;}
+#fantom .feature-media{top:calc(-1 * clamp(110px,13vw,190px));bottom:-40px;right:calc((100% - 100vw) / 2);width:min(58vw,1060px);}
+.fantom-galeria{position:relative;z-index:5;margin-top:clamp(90px,10vw,150px);background:#06080B;}
+.fantom-galeria .wrap{max-width:1360px;}
+.fg-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(10px,1.2vw,18px);}
+.fg{margin:0;position:relative;overflow:hidden;aspect-ratio:16/9;background:#0B0E12;grid-column:span 4;}
+.fg-03{grid-column:1 / span 8;grid-row:span 2;aspect-ratio:auto;}
+.fg-02,.fg-06{grid-column:9 / span 4;}
+.fg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.9) contrast(1.05);
+  transform:scale(1.04);transition:transform 2.4s var(--ease2),filter 1s;}
+.fg.in img{transform:scale(1);}
+.fg:hover img{transform:scale(1.04);filter:saturate(1.05) contrast(1.05);}
+.fg::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(207,169,104,.12);
+  background:linear-gradient(0deg,rgba(6,8,11,.35),transparent 45%);}
+.fg-foto{margin:18px 0 0;text-align:right;font-family:var(--font-display);font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:rgba(236,228,212,.42);}
+.fantom-hlas{margin-top:0;}
+@media (max-width:1100px){
+  #fantom .feature-media{top:auto;bottom:auto;right:auto;width:auto;}
+}
+@media (max-width:760px){
+  .fg-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .fg,.fg-02,.fg-06{grid-column:span 1;}
+  .fg-03,.fg-04{grid-column:1 / -1;grid-row:auto;aspect-ratio:16/9;}
+  .fg-foto{text-align:left;}
+}
+@media (prefers-reduced-motion:reduce){ .fg img{transition:none;transform:none !important;} }
+
+/* -- Fantóm: dôkaz a zdroj pod citátmi -- */
+.fq-proof{max-width:760px;margin:clamp(48px,5vw,72px) auto 0;text-align:center;font-family:var(--font-disp2);font-size:clamp(20px,1.9vw,25px);line-height:1.4;color:rgba(236,228,212,.82);
+  padding-top:clamp(36px,4vw,52px);border-top:1px solid var(--gold-line);}
+.fq-zdroj{margin:18px auto 0;text-align:center;font-family:var(--font-display);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;}
+.fq-zdroj a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-line);line-height:1.8;}
+.fq-zdroj a:hover{border-bottom-color:var(--gold);}
+
+/* ===== Postrehy – dve redakčné karty ===== */
+.postrehy{background:var(--paper-2);}
+.po-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,64px);}
+.po-card{position:relative;padding:clamp(34px,4vw,56px) 0 0;border-top:1px solid var(--ochre);display:flex;flex-direction:column;min-width:0;}
+.po-eyebrow{font-family:var(--font-display);font-size:10.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--ochre);margin:0 0 18px;line-height:1.7;}
+.po-card h3{font-family:var(--font-disp2);font-weight:500;font-size:clamp(30px,3.2vw,44px);line-height:1.04;margin:0 0 22px;color:var(--ink);}
+.po-context{font-size:15.5px;line-height:1.6;color:#5a554c;margin:0 0 22px;}
+.po-excerpt{margin:0 0 24px;padding:0;}
+.po-excerpt p{font-family:var(--font-disp2);font-style:italic;font-size:clamp(20px,1.7vw,23px);line-height:1.45;color:#2c2a26;margin:0;}
+.po-big p{font-size:clamp(26px,2.6vw,36px);line-height:1.22;color:var(--ink);}
+.po-pull{font-family:var(--font-disp2);font-size:clamp(22px,2vw,28px);line-height:1.25;color:var(--ochre);margin:6px 0 26px;padding-left:22px;border-left:1px solid var(--ochre);}
+.po-note{font-size:13.5px;color:#6E675C;font-style:italic;margin-top:auto;padding-top:8px;}
+.po-links{margin:auto 0 0;padding-top:18px;font-family:var(--font-display);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#8C857A;}
+.po-note + .po-links{margin-top:0;}
+.po-links a{color:var(--ochre);text-decoration:none;border-bottom:1px solid var(--gold-line);line-height:1.9;}
+.po-links a:hover{border-bottom-color:var(--ochre);}
+@media (max-width:880px){ .po-grid{grid-template-columns:minmax(0,1fr);gap:64px;} }
+
+/* -- AFP a Factstory: vysvetlivka -- */
+.afp-explainer{margin-top:clamp(56px,6vw,88px);padding-top:clamp(30px,3vw,40px);border-top:1px solid var(--gold-line);max-width:980px;}
+.ax-title{font-family:var(--font-display);font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--ochre);margin:0 0 24px;}
+.ax-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px clamp(28px,4vw,60px);}
+.ax-col h4{font-family:var(--font-disp2);font-weight:500;font-size:26px;line-height:1;margin:0 0 10px;color:var(--ink);}
+.ax-col p{font-size:15px;line-height:1.65;color:#4a463f;margin:0;}
+.ax-pos{margin:26px 0 0;font-family:var(--font-disp2);font-style:italic;font-size:clamp(19px,1.7vw,22px);line-height:1.4;color:var(--ink);}
+@media (max-width:760px){ .ax-grid{grid-template-columns:minmax(0,1fr);} }
+.hero h1{font-size:clamp(40px,5.2vw,74px);max-width:12em;}
+
+.ax-strong{margin-top:12px !important;font-family:var(--font-disp2);font-style:italic;font-size:19px !important;line-height:1.35 !important;color:var(--ink) !important;}
+/* -- motto v hero ako na banneroch -- */
+.maxim{font-family:var(--font-disp2);font-style:italic;font-weight:400;color:var(--ivory);}
+.maxim .strong{font-style:italic;color:var(--ivory);border-bottom:none;padding-bottom:0;}
+.maxim .faint{color:var(--gold);}
+.maxim-tr{font-family:var(--font-disp2);font-style:italic;text-transform:none;letter-spacing:.01em;font-size:clamp(16px,1.5vw,19px);color:rgba(236,228,212,.58);}
+/* -- zdrojové čipy -- */
+.kult-zdroj a,.fq-zdroj a,.po-links a{display:inline-flex;align-items:center;gap:6px;padding:3px 10px 3px 11px;border:1px solid var(--gold-line);border-radius:999px;
+  font-family:var(--font-display);font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;line-height:1.5;text-decoration:none;white-space:nowrap;
+  border-bottom:1px solid var(--gold-line);transition:background .3s,border-color .3s,color .3s;}
+.kult-zdroj a::after,.fq-zdroj a::after,.po-links a::after{content:"97";font-size:11px;letter-spacing:0;}
+.kult-zdroj a:hover,.fq-zdroj a:hover,.po-links a:hover{border-color:var(--gold);background:rgba(207,169,104,.12);}
+.fq-zdroj a{white-space:normal;text-align:center;}
+
+/* -- poistky šírky -- */
+nav.nav a{letter-spacing:.05em;}
+@media (min-width:1301px) and (max-width:1600px){ nav.nav{gap:11px;} nav.nav a{letter-spacing:.02em;font-size:11px;} .lang{margin-left:12px;} }
+.sec-head h2,.about h2,.why h2,.contact h2,.ref-h3,.kult-card h3,.po-card h3,.person h3,.milestone-body h3,.feature-text h3{overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;}
+@media (max-width:560px){ .sec-head h2,.about h2,.why h2{font-size:clamp(30px,8.6vw,40px);} }
+
+.fq::before,.fq-3::before{content:none;}
+.fq{padding-top:34px;}
+.fq-3{padding-top:clamp(40px,4vw,64px);}
+.quote::before{content:none;}
+.quote{border-top:1px solid rgba(207,169,104,.22);}
+@media (max-width:1100px){ .hero-portret{opacity:.14;} }
+
+.ax-quote{margin:0 0 clamp(30px,3vw,44px);padding:0 0 0 24px;border-left:1px solid var(--ochre);max-width:860px;}
+.ax-quote p{font-family:var(--font-disp2);font-style:italic;font-weight:400;font-size:clamp(22px,2.2vw,30px);line-height:1.3;color:var(--ink);margin:0;}
+.ax-list{list-style:none;margin:0;padding:0;}
+.ax-list li{position:relative;padding:0 0 0 20px;margin:0 0 10px;font-size:15px;line-height:1.6;color:#4a463f;}
+.ax-list li::before{content:"";position:absolute;left:0;top:.68em;width:7px;height:7px;transform:rotate(45deg);border:1px solid var(--ochre);background:rgba(207,169,104,.25);}
+.ax-list li:last-child{margin-bottom:0;}
+/* ==== koniec V2 ==== */
+
 </style>
 </head>
 <body>
@@ -808,6 +1274,15 @@ details.viac .reveal{opacity:1 !important;transform:none !important;}
         <img src="/images/DOKAZ.jpg" alt="Martin Horváth počas natáčania reportáže AFP / Factstory, región Zlín">
       </div>
     </div>
+      <div class="afp-explainer reveal">
+      <h3 class="ax-title">AFP a Factstory</h3>
+      <div class="ax-grid">
+        <div class="ax-col"><h4>AFP</h4><p>Ak sa má príbeh niekedy dostať do svetových médií, musí sa k nim dostať cez agentúrny servis, akým je AFP Wire.</p></div>
+        <div class="ax-col"><h4>Factstory</h4><p>Factstory, produkčná agentúra Agence France-Presse, vyrába reportáže na objednávku podľa redakčných pravidiel AFP – a AFP ich distribuuje médiám vo viac než 150 krajinách.</p></div>
+        <div class="ax-col"><h4>Princíp</h4><ul class="ax-list"><li>O tom, ktoré médium príbeh prevezme a uverejní, rozhoduje vždy samo médium – nie AFP a nie klient.</li><li>Nikto, kto rozhoduje o výsledku, nie je platený tým, o kom sa píše.</li><li>Všetko, čo prejde AFP Wire, ostáva vyhľadateľné a citovateľné v archívoch AFP a SITA aj po skončení spravodajského cyklu.</li></ul></div>
+        <div class="ax-col"><h4>Naša rola</h4><p>Celý projekt pripravuje a vedie Brand Consulting. Nepracujeme pre AFP ani Factstory – pracujeme pre klientov, ktorí sa vďaka tomu ocitnú v spolupráci s ich ekosystémom.</p></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -934,7 +1409,7 @@ details.viac .reveal{opacity:1 !important;transform:none !important;}
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">Kultúra ako dôkaz</p>
-      <h2>Fantóm opery na Zámku. Najprv dielo, potom príbeh.</h2>
+      <h2>Fantóm opery na Zámku. <em>Najprv dielo, potom príbeh.</em></h2>
     </div>
     <div class="feature-card reveal">
       <div class="feature-text">
@@ -948,6 +1423,67 @@ details.viac .reveal{opacity:1 !important;transform:none !important;}
       <div class="feature-media">
         <img src="/images/fantom-opery.jpg" alt="Fantóm opery na Zámku – vizuál projektu">
       </div>
+    </div>
+  </div>
+  <div class="fantom-galeria">
+    <div class="wrap">
+      <div class="fg-grid">
+        <figure class="fg fg-03 reveal"><img src="/images/fantom/fantom-03.jpg" alt="Fantóm opery na Zámku, Šimák Zámok Pezinok, október 2026" loading="lazy" width="1600" height="900"></figure>
+        <figure class="fg fg-02 reveal"><img src="/images/fantom/fantom-02.jpg" alt="Fantóm opery na Zámku, Šimák Zámok Pezinok, október 2026" loading="lazy" width="1600" height="900"></figure>
+        <figure class="fg fg-06 reveal"><img src="/images/fantom/fantom-06.jpg" alt="Fantóm opery na Zámku, Šimák Zámok Pezinok, október 2026" loading="lazy" width="1600" height="900"></figure>
+        <figure class="fg fg-01 reveal"><img src="/images/fantom/fantom-01.jpg" alt="Fantóm opery na Zámku, Šimák Zámok Pezinok, október 2026" loading="lazy" width="1600" height="900"></figure>
+        <figure class="fg fg-05 reveal"><img src="/images/fantom/fantom-05.jpg" alt="Fantóm opery na Zámku, Šimák Zámok Pezinok, október 2026" loading="lazy" width="1600" height="900"></figure>
+        <figure class="fg fg-04 reveal"><img src="/images/fantom/fantom-04.jpg" alt="Fantóm opery na Zámku, Šimák Zámok Pezinok, október 2026" loading="lazy" width="1600" height="900"></figure>
+      </div>
+      <p class="fg-foto">Foto: František Gažík</p>
+    </div>
+  </div>
+  <div class="fantom-hlas">
+    <div class="wrap">
+      <div class="fh-grid">
+        <blockquote class="fq fq-1 reveal"><p>„Bola som otrasená, pretože raz konečne adaptácia naozaj vychádza z knihy. Je to kópia knihy, výborne zahrané.“</p></blockquote>
+        <blockquote class="fq fq-2 reveal"><p>„Vyvoláva to viac strachu a napätia. A ten hlas, hlas Fantóma, rozochvieva. Pre mňa je to silnejšie.“</p></blockquote>
+        <blockquote class="fq fq-3 reveal"><p>„Myslím si, že by sa mu to páčilo, pretože sme naozaj vo svete jeho knihy. Rešpektovali jeho pamiatku, rešpektovali jeho písanie. Je to dokonalé.“</p></blockquote>
+      </div>
+      <p class="fq-who reveal">Véronique Leroux, pravnučka Gastona Lerouxa, po predstavení</p>
+      <p class="fq-proof reveal">Premiéru sledovali Véronique Leroux, primátor Pezinka Roman Mács a veľvyslanec Francúzska na Slovensku Nicolas Suran.</p>
+      <p class="fq-zdroj"><a href="https://sita.sk/pravnucka-gastona-lerouxa-po-premiere-v-pezinku-konecne-adaptacia-ktora-vychadza-z-knihy-rozhovor/" target="_blank" rel="noopener">Zdroj: SITA, rozhovor s Véronique Leroux</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- V UMENÍ A PRODUKCII (26. 10. 2026, zdroj: REFERENCIE_FAKTY.md pre MINEDU) -->
+<section class="kultura" id="kultura">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">V umení a produkcii</p>
+      <h2>Hlas, zvuk a príbeh. <em>Kultúra, kde nikto nie je platený za to, aby veril.</em></h2>
+    </div>
+    <div class="kult-grid">
+      <figure class="kult-card reveal">
+        <div class="kult-img"><img src="/images/kultura/pastelky.jpg" alt="Rozprávky pre malé Pastelky" loading="lazy"></div>
+        <figcaption><span class="kult-rok">2022 →</span><h3>Rozprávky pre malé Pastelky</h3><p>Autor konceptu filantropického projektu – najväčšieho auditívneho projektu na Slovensku pre nevidiacich. Na YouTube takmer 4 milióny zhliadnutí.</p><p class="kult-zdroj">pre <a href="https://www.codes.sk/spolocensky-presah/" target="_blank" rel="noopener">CODES Brand House</a> · Zdroj: <a href="https://www.youtube.com/@RozpravkypremalePastelky" target="_blank" rel="noopener">YouTube</a></p></figcaption>
+      </figure>
+      <figure class="kult-card reveal">
+        <div class="kult-img"><img src="/images/kultura/kniha-dzungli.jpg" alt="Kniha džunglí" loading="lazy"></div>
+        <figcaption><span class="kult-rok">2024 – 2025</span><h3>Kniha džunglí</h3><p>Kreatívny koncept, hudobná dramaturgia a réžia rozsiahlej audio nahrávky; v úlohe Šerchána.</p><p class="kult-zdroj">pre <a href="https://www.codes.sk/spolocensky-presah/" target="_blank" rel="noopener">CODES Brand House</a> · Zdroj: <a href="https://www.youtube.com/watch?v=2CnjKkrxCaI" target="_blank" rel="noopener">YouTube</a></p></figcaption>
+      </figure>
+      <figure class="kult-card reveal">
+        <div class="kult-img"><img src="/images/kultura/cinemax.jpg" alt="Film bez obrazu, CINEMAX Bratislava" loading="lazy"></div>
+        <figcaption><span class="kult-rok">2025</span><h3>Film bez obrazu, CINEMAX Bratislava</h3><p>Pilotné uvedenie Knihy džunglí v kine – len priestorový zvuk, pre nevidiacich aj vidiacich.</p><p class="kult-zdroj">pre <a href="https://www.codes.sk/spolocensky-presah/" target="_blank" rel="noopener">CODES Brand House</a> · Zdroj: <a href="https://www.codes.sk/spolocensky-presah/" target="_blank" rel="noopener">codes.sk</a></p><span class="kult-foto">foto: František Gažík</span></figcaption>
+      </figure>
+      <figure class="kult-card reveal">
+        <div class="kult-img"><img src="/images/kultura/hlas-harfy.jpg" alt="Hlas harfy Michala Matejčíka" loading="lazy"></div>
+        <figcaption><span class="kult-rok">2024 →</span><h3>Hlas harfy Michala Matejčíka</h3><p>Kreatívny koncept a dramaturgia, s hlasom Petra Bakera.</p><p class="kult-zdroj">projekt Brand Consulting · Zdroj: <a href="https://www.youtube.com/watch?v=zHYa3_GwyLA" target="_blank" rel="noopener">YouTube</a></p></figcaption>
+      </figure>
+      <figure class="kult-card reveal">
+        <div class="kult-img"><img src="/images/kultura/premeny-harfy.jpg" alt="Premeny harfy, Divadlo Jána Palárika v Trnave" loading="lazy"></div>
+        <figcaption><span class="kult-rok">2017</span><h3>Premeny harfy, Divadlo Jána Palárika v Trnave</h3><p>Producent vypredanej multimediálnej monodrámy s harfistom Michalom Matejčíkom.</p><p class="kult-zdroj">projekt Brand Consulting · Zdroj: Trnava Live, 11. 9. 2017</p><span class="kult-foto">foto: Michal Líška</span></figcaption>
+      </figure>
+      <figure class="kult-card reveal">
+        <div class="kult-img"><img src="/images/kultura/maly-princ.jpg" alt="Malý princ s Jurajom Kukurom" loading="lazy"></div>
+        <figcaption><span class="kult-rok">2024</span><h3>Malý princ s Jurajom Kukurom</h3><p>Prepojenie Rozprávok pre malé Pastelky s Detskou Univerzitou Komenského.</p><p class="kult-zdroj">pre <a href="https://www.codes.sk/spolocensky-presah/" target="_blank" rel="noopener">CODES Brand House</a> · Zdroj: <a href="https://www.youtube.com/watch?v=Ee5zpvpqWWA" target="_blank" rel="noopener">YouTube</a></p></figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -2087,6 +2623,31 @@ details.viac .reveal{opacity:1 !important;transform:none !important;}
 </section>
 
 <!-- MEDIA & VALIDÁCIA (merged: appearances + independent quotes, one narrative beat) -->
+<!-- POSTREHY (26. 10. 2026) -->
+<section class="postrehy" id="postrehy">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Postrehy</h2>
+    </div>
+    <div class="po-grid">
+      <article class="po-card reveal">
+        <p class="po-eyebrow">Paríž · AFP, OECD, Véronique Leroux · 2026</p>
+        <h3>Fakt, dáta, príbeh</h3>
+        <blockquote class="po-excerpt"><p>„Fakt – AFP, kde fakt prejde overením skôr, než sa z neho stane správa. Dáta – OECD, kde inovačné stratégie pre regióny stoja na tvrdých číslach, nie na náladách a sentimente, či nostalgickom spomínaní. Príbeh – debata s Véronique Leroux, pravnučkou autora Fantóma opery, o podstate nášho imerzívneho projektu Erika. Príbeh, ktorý má prameň.“</p></blockquote>
+        <p class="po-pull">„Čím menej vrstiev medzi udalosťou a človekom, tým väčšia váha.“</p>
+        <p class="po-links"><a href="https://www.linkedin.com/in/martinhorvathbc/recent-activity/all/" target="_blank" rel="noopener">Celý text na LinkedIne</a></p>
+      </article>
+      <article class="po-card reveal">
+        <p class="po-eyebrow">Reportéri STVR · október 2026</p>
+        <h3>Hlas a dôvera v čase AI</h3>
+        <p class="po-context">Reportéri STVR otvorili tému zneužívania ľudského hlasu umelou inteligenciou – s Martinom Horváthom.</p>
+        <blockquote class="po-excerpt po-big"><p>„Už to nie je vtip, ktorému sa zasmejeme, ale výmysel, ktorému uveríme, či lepšie povedané, niekto uveriť môže.“</p></blockquote>
+        <p class="po-links"><a href="https://www.facebook.com/share/v/19N8FnU2s7/" target="_blank" rel="noopener">Pozrieť reportáž</a> · <a href="https://www.linkedin.com/in/martinhorvathbc/recent-activity/all/" target="_blank" rel="noopener">Text na LinkedIne</a></p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="media" id="media">
   <div class="wrap">
     <div class="sec-head reveal">

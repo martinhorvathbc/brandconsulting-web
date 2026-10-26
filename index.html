@@ -1219,6 +1219,23 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
 @media (max-width:480px){h1,h2,h3,h4,.sec-head h2,.method h2{overflow-wrap:anywhere !important;}}
 /* ==== koniec G3 ==== */
 @media (min-width:600px){.tv-grid .tv-card:nth-child(7){grid-column:1/-1;border-right:none !important;}}
+/* CINY – sedem činov (26. 10. 2026) */
+.ciny h2 em{font-style:italic;color:#7A5B22;}
+.retaz{list-style:none;display:flex;flex-wrap:wrap;gap:0;margin:26px 0 30px;padding:0;font-family:var(--font-display);font-size:12px;letter-spacing:.14em;text-transform:uppercase;}
+.retaz li{position:relative;padding:9px 30px 9px 14px;background:var(--paper-2);border:1px solid rgba(122,91,34,.35);margin:0 -1px 6px 0;color:#2E3338;}
+.retaz li:not(:last-child)::after{content:"→";position:absolute;right:10px;color:var(--ochre);}
+.retaz li:last-child{background:var(--navy);color:#fff;border-color:var(--navy);padding-right:14px;}
+.js .retaz li{opacity:0;transform:translateX(-8px);transition:opacity .5s ease,transform .5s ease;}
+.reveal.in .retaz li{opacity:1;transform:none;}
+.reveal.in .retaz li:nth-child(2){transition-delay:.25s}.reveal.in .retaz li:nth-child(3){transition-delay:.5s}
+.reveal.in .retaz li:nth-child(4){transition-delay:.75s}.reveal.in .retaz li:nth-child(5){transition-delay:1s}
+.ciny-motto{margin:0 0 clamp(30px,4vw,48px);font-family:var(--font-serif);font-style:italic;font-size:clamp(19px,2vw,23px);color:#3A3F45;max-width:760px;}
+.ciny-motto cite{display:block;margin-top:8px;font-style:normal;font-family:var(--font-display);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#7A5B22;}
+.ciny .tv-card .cin{font-weight:600;color:#14181D;}
+.ciny .tv-card .hlas{margin-top:auto;padding-top:14px;border-top:1px solid rgba(122,91,34,.25);font-size:15px;line-height:1.5;color:#3A3F45;}
+.ciny .tv-card .hlas span{display:block;font-family:var(--font-display);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7A5B22;margin-bottom:4px;}
+.ciny .tv-card .hlas a{margin:0;padding:0;font-size:15px;letter-spacing:0;text-transform:none;font-weight:400;color:#7A5B22;text-decoration:underline;text-underline-offset:2px;}
+@media (prefers-reduced-motion:reduce){.js .retaz li{opacity:1;transform:none;transition:none;}}
 </style>
 </head>
 <body>
@@ -1258,24 +1275,21 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
   <div class="wrap">
     <p class="hero-osoba">Martin Horváth · Brand Consulting s. r. o.</p>
     <p class="hero-name">Competitive Reality</p>
-    <p class="hero-tagline">Metodika strategického riadenia reputácie.</p>
-    <h1>Reputácia sa nedá kúpiť. Je dôsledkom <em>reality</em>, ktorú značka vytvára.</h1>
+    <p class="hero-tagline">Reputácia, ktorá vzniká zo skutkov.</p>
+    <h1>Nerobím logá. Hľadám <em>jeden pozoruhodný čin</em>, o ktorom budú hovoriť iní.</h1>
     <p class="maxim"><span class="strong">Fama ex factis</span> nascitur, <span class="faint">non ex verbis.</span></p>
     <p class="maxim-tr">Reputácia vzniká zo skutkov, nie zo slov.</p>
     <div class="hero-body">
-      <p>Príliš často sa komunikácia stáva začiatkom procesu, ktorý mal začať zmenou reality.</p>
-      <p>Počas troch desaťročí práce – naprieč masmédiami, medzinárodnými vzťahmi, štátnou správou, súkromným sektorom, kultúrou a aj neziskovým prostredím – sme opakovane pozorovali ten istý jav.</p>
+      <p>Väčšina značiek dnes rieši reputáciu frekvenciou – ďalší príspevok, tá istá veta v inom formáte. Čím viac značka hovorí bez toho, aby sa niečo stalo, tým menej o nej hovoria iní.</p>
+      <p>Tridsať rokov pracujem v opačnom poradí. Najprv vec, ktorá naozaj existuje. Potom dianie, ktoré stojí za reč. Až potom sa o ňom hovorí – a z toho vzniká pozornosť a <strong>konkurencieschopnosť</strong>.</p>
       <details class="viac"><summary>Čítať ďalej</summary>
-<p>Tam, kde pod komunikáciou existovala skutočná zmena, reputácia časom vznikla.</p>
-      <p>Tam, kde komunikácia nahrádzala chýbajúcu podstatu, reputácia sa skôr či neskôr rozpadla.</p>
-      <p>Metodika Competitive Reality vznikla ako odpoveď na túto skúsenosť.</p>
-      <p>Nie je postavená na otázke, <strong>ako komunikovať lepšie.</strong> Začína oveľa skôr. Pýta sa, <strong>či existuje realita, ktorá komunikáciu unesie.</strong></p>
-      <p>A či je táto realita konkurencieschopná a dostatočne atraktívna.</p>
-      <p>Odpoveď na túto otázku rozhoduje o všetkom, čo príde potom.</p>
-    
-</details></div>
+      <p>Naučil som sa to na vlastnom omyle. Prvá imidžová kampaň Slovenska na CNN International, ktorú som pripravoval, bola dobre spravená – a vnímanie krajiny takmer nezmenila. Realita pod obrazom ešte neuniesla to, čo kampaň sľubovala.</p>
+      <p>Odvtedy sa nepýtam, ako komunikovať lepšie. Pýtam sa, <strong>či existuje realita, ktorá komunikáciu unesie</strong> – a aký čin z nej urobí príbeh, ktorý svet povie sám.</p>
+      <p>Logo a grafika sú obal. Dobrý obal má cenu a robia ho tí, ktorí to vedia najlepšie. Ja pracujem na tom, čo v ňom bude.</p>
+      </details>
+    </div>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#proof">Pozrieť referenciu →</a>
+      <a class="btn btn-primary" href="#ciny">Sedem činov →</a>
       <a class="btn btn-ghost" href="#begin">Ako pracujeme →</a>
     </div>
   </div>
@@ -1305,13 +1319,60 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
   </div>
 </section>
 
-<!-- TVARE -->
-<section class="tvare" id="tvare">
+<!-- CINY – sedem polôh, sedem činov -->
+<section class="tvare ciny" id="ciny">
+  <span id="tvare" aria-hidden="true"></span>
   <div class="wrap reveal">
-    <p class="eyebrow">Tváre</p>
-    <h2>Jeden človek. <em>Sedem disciplín.</em></h2>
-    <p class="tv-lead">Každú z nich možno najať samostatne. Spolu sa zopakovať nedajú.</p>
-    <div class="tv-grid"><div class="tv-card"><span class="tv-num">01</span><h3>Novinár</h3><p>Písal skôr, než radil. Vyštudoval žurnalistiku zameranú na tlačové agentúry a dodnes číta rozdiel medzi tým, čo inštitúcia o sebe hovorí, a tým, aká je.</p><a href="#about">Viac →</a></div><div class="tv-card"><span class="tv-num">02</span><h3>Štátny stratég</h3><p>V službách štátu (SARIO, SACR): summit Bush – Putin 2005, EXPO Zaragoza, Bank of England, štátna návšteva kráľovnej Alžbety II., kampaň Slovenska na CNN International.</p><a href="#about">Viac →</a></div><div class="tv-card"><span class="tv-num">03</span><h3>Konzultant reputácie</h3><p>Autor metodiky Competitive Reality, 20 rokov inšpirovaný prácou Simona Anholta. Pripravuje klientov na štandard, ktorý obstojí pred medzinárodnou tlačovou agentúrou.</p><a href="#method">Viac →</a></div><div class="tv-card"><span class="tv-num">04</span><h3>Hlas</h3><p>Dabing pre Disney/Pixar a Marvel, spolupráca s Donom LaFontainom a Petrom Bakerom. Erik vo Fantómovi opery.</p><a href="#voice">Viac →</a></div><div class="tv-card"><span class="tv-num">05</span><h3>Autor a producent</h3><p>Fantóm opery na Zámku, Rozprávky pre malé Pastelky, Kniha džunglí v Dolby Atmos, práva na Jesus Christ Superstar vyrokované priamo s The Really Useful Group.</p><a href="#fantom">Viac →</a></div><div class="tv-card"><span class="tv-num">06</span><h3>Rečník</h3><p>53 verejných vystúpení a prednášok od roku 2006.</p><a href="#speaking">Viac →</a></div><div class="tv-card"><span class="tv-num">07</span><h3>Dramaturg a moderátor</h3><p>Dramaturg, scenárista a moderátor dokumentu o priemyselnej premene Zlínskeho kraja pre CODES Brand House. Agence France-Presse ho distribuovala na svoj medzinárodný wire.</p><a href="#proof">Viac →</a></div></div>
+    <p class="eyebrow">Sedem polôh · sedem činov</p>
+    <h2>Jeden človek. <em>Sedem činov, o ktorých hovorili iní.</em></h2>
+    <ol class="retaz" aria-label="Reťaz reputácie">
+      <li>substancia</li><li>pozoruhodné dianie</li><li>hovoria o ňom iní</li><li>pozornosť</li><li>konkurencieschopnosť</li>
+    </ol>
+    <blockquote class="ciny-motto">„…a balanced combination of strategy, substance and symbolic actions.“<cite>Padraic Gilligan, SoolNua, Dublin – odporúčanie, 2017</cite></blockquote>
+    <div class="tv-grid">
+      <article class="tv-card">
+        <span class="tv-num">01 · 1991 – 1995</span><h3>Novinár</h3>
+        <p class="cin">Školský časopis Starý blesk, ktorý viedol, trikrát vyhral celoštátnu súťaž Štúrovo pero.</p>
+        <p>Potom žurnalistika so zameraním na tlačové agentúry. Jednou zo štátnicových otázok bola AFP – o tridsať rokov neskôr distribuovala dokument, ktorý moderoval.</p>
+        <p class="hlas"><span>Kto o tom hovoril</span>porota súťaže Štúrovo pero, trikrát</p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">02 · 2008</span><h3>Štátny stratég</h3>
+        <p class="cin">Prvá nadlinková imidžová kampaň Slovenska na CNN International. Anglickú verziu spotu nahovoril Don LaFontaine.</p>
+        <p>A lekcia, ktorú dnes hovorí nahlas: kampaň bola dobrá, no vnímanie krajiny takmer nezmenila. Z tohto omylu vznikla celá metóda.</p>
+        <p class="hlas"><span>Kto o tom hovoril</span><a href="https://www.cas.sk/clanok/82576/spot-o-slovensku-nahovoril-najznamejsi-hlas-hollywoodu/" target="_blank" rel="noopener">Nový Čas: „Spot o Slovensku nahovoril najznámejší hlas Hollywoodu“ ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">03 · 2021</span><h3>Konzultant reputácie</h3>
+        <p class="cin">Namiesto kampane jeden čin: pápež František požehnal základný kameň novej Univerzitnej nemocnice sv. Martina.</p>
+        <p>Investícia vyše 300 miliónov eur a zatiaľ len plán. Požehnanie v Šaštíne 15. septembra 2021 sa nedá kúpiť ani zopakovať.</p>
+        <p class="hlas"><span>Kto o tom hovoril</span><a href="https://www.teraz.sk/regiony/papez-pozehnal-zakladny-kamen-univ/577156-clanok.html" target="_blank" rel="noopener">TASR ↗</a> · <a href="https://www.prnewswire.com/news-releases/pope-francis-has-blessed-the-cornerstone-of-new-saint-martins-hospital--the-first-slovak-healthcare-project-funded-by-the-eu-recovery-and-resilience-plan-301379788.html" target="_blank" rel="noopener">PR Newswire ↗</a> · <a href="https://www.omediach.com/marketing/22645-prokop-2021-pozna-svojich-vitazov-toto-su-najlepsie-pr-projekty-na-slovensku" target="_blank" rel="noopener">PROKOP 2021, 3. miesto ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">04 · 2022 – 2025</span><h3>Hlas</h3>
+        <p class="cin">Film bez obrazu: Kniha džunglí v tme kina, len zvuk a hlas, pre nevidiace deti.</p>
+        <p>Ako dieťa počúval rozhlasové hry so slepým susedom. Dnes je autorom konceptu a hlasom Rozprávok pre malé Pastelky – vyše 3,9 milióna vypočutí.</p>
+        <p class="hlas"><span>Kto o tom hovoril</span>„Povedala, že bola v džungli a zvieratá prišli úplne blízko. Cez sklo telefónu sa k nej nemôžu dostať.“ – mama nevidiacej diváčky · <a href="https://sita.sk/okolite-zvuky-nas-vtiahli-do-dzungle-povedali-nevidiace-a-slabozrake-deti-po-navsteve-kina-video-foto/" target="_blank" rel="noopener">SITA ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">05 · 2026</span><h3>Autor a producent</h3>
+        <p class="cin">Fantóm opery na Zámku – autor konceptu a scenára, kreatívny producent a hlas Fantóma.</p>
+        <p>Premiéra 18. októbra a repríza 19. októbra 2026 v Šimák Zámku Pezinok, oba večery vypredané. Na premiére sedela rodina Gastona Lerouxa.</p>
+        <p class="hlas"><span>Kto o tom hovoril</span><a href="https://sita.sk/pravnucka-gastona-lerouxa-po-premiere-v-pezinku-konecne-adaptacia-ktora-vychadza-z-knihy-rozhovor/" target="_blank" rel="noopener">SITA, rozhovor s Véronique Leroux: „Konečne adaptácia, ktorá vychádza z knihy“ ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">06 · 2006 – 2026</span><h3>Rečník</h3>
+        <p class="cin">53 verejných vystúpení – od TEDx po OECD v Paríži.</p>
+        <p>V roku 2024 dramaturg a moderátor prvého Competitive Identity Masterclassu Simona Anholta a Roberta Goversa v strednej Európe.</p>
+        <p class="hlas"><span>Kto o tom hovoril</span>„Stačila mu fixka a tabuľa, aby si na konci prednášky vyslúžil prirodzený potlesk.“ – študentka FMK UCM · <a href="https://kongres-magazine.eu/2024/07/zuzana-mikulasova-slovakia-needs-to-clarify-how-it-wants-to-appear-in-the-world/" target="_blank" rel="noopener">Kongres Magazine ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">07 · 2026</span><h3>Dramaturg a moderátor</h3>
+        <p class="cin">Dokument o priemyselnej premene Zlínskeho kraja pre CODES Brand House – dramaturg, scenárista a moderátor.</p>
+        <p>Malý kraj s Baťovým dedičstvom na svetovom AFP Wire. AFP má novinárov v 151 krajinách.</p>
+        <p class="hlas"><span>Kto o tom hovoril</span><a href="https://mediaconnect.com/a-region-haunted-by-nostalgia-searches-for-a-new-industrial-future?lang=en" target="_blank" rel="noopener">Agence France-Presse ↗</a></p>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -1545,7 +1606,7 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
 
       <p>Overoval ho pri vstupe švajčiarskej firmy Optotune na Slovensko, kde zodpovedal za governance affairs pri priamej zahraničnej investícii takmer štyroch miliónov eur – investícii postavenej na dôvere akademickej a vedeckej komunity, nie na marketingových tvrdeniach. Overoval ho pri projekte Metrostav, kde chránil takmer šesťdesiat miliónov eur presne podľa tejto logiky: reputačná zmena pôvodného projektu TRINITY na fungujúci CityPark Ružinov smela komunikovať navonok až potom, čo sa opravila technická realita pod ňou, nie skôr. Overoval ho aj pri sučianskom výrobcovi Robotec, kde koncept Innovation Days nebol eventom, ale dôkazom, že dôveryhodnosť technologickej firmy vzniká cez inovácie, odbornú komunitu, R&D a obsah – súčasťou zadania bola aj podpora vybudovania jej výskumno-vývojového centra robotiky a automatizácie.</p>
 
-      <p>Overoval ho pri Univerzitnej nemocnici sv. Martina, kde namiesto kampane pred investíciou takmer tristo miliónov eur navrhol jeden overiteľný čin – požehnanie základného kameňa pápežom Františkom – a získal zaň cenu PROKOP, najvyššie ocenenie slovenského PR. Overoval ho pri malých podnikateľoch v Trnavskom kraji, kde zistil, že medzi dôverou štátu a dôverou malej prevádzky nie je rozdiel v podstate, iba v mierke. Overoval ho pri OECD a téme Smart Cities, ktoré namiesto vyhlasovania miest za „smart" najprv meria, čo je skutočne pravda.</p>
+      <p>Overoval ho pri Univerzitnej nemocnici sv. Martina, kde namiesto kampane pred investíciou takmer tristo miliónov eur navrhol jeden overiteľný čin – požehnanie základného kameňa pápežom Františkom – a projekt získal ocenenie PROKOP 2021 (3. miesto, kategória Small budget). Overoval ho pri malých podnikateľoch v Trnavskom kraji, kde zistil, že medzi dôverou štátu a dôverou malej prevádzky nie je rozdiel v podstate, iba v mierke. Overoval ho pri OECD a téme Smart Cities, ktoré namiesto vyhlasovania miest za „smart" najprv meria, čo je skutočne pravda.</p>
 
       <p>Postupne z tejto práce nevzniká len metodika, ale platforma. V roku 2020 zakladá spolu s viacerými profesionálmi Brand Slovensko 30 – nie jednorazový projekt, ale trvalý odborný ekosystém okolo témy reputácie Slovenska. So Simonom Anholtom doň prenáša tie isté princípy, ktoré si prvýkrát overoval pred dvadsiatimi rokmi ako účastník jeho masterclasov, či organizátor podujatia pre SACR, no teraz v regionálnej mierke stredoeurópskeho priestoru.</p>
 

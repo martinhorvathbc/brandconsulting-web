@@ -1243,6 +1243,16 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
 .ciny .tv-card .cin-foto{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;margin:0 0 16px;display:block;}
 .ciny .tv-card figcaption{font-size:13px;color:#5A5F65;margin:-10px 0 14px;font-style:italic;}
 @media (prefers-reduced-motion:reduce){.js .retaz li{opacity:1;transform:none;transition:none;}}
+/* DOKAZY – pás činov v hero (26. 10. 2026) */
+.dokazy{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:760px;margin:26px 0 30px;}
+.dokaz{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;border:1px solid rgba(200,165,100,.35);text-decoration:none;background:#14181D;}
+.dokaz img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;}
+.dokaz:hover img{transform:scale(1.04);}
+.dokaz span{position:absolute;left:0;right:0;bottom:0;padding:22px 9px 8px;background:linear-gradient(transparent,rgba(10,12,15,.92));color:#F3EEE4;font-size:11.5px;line-height:1.3;}
+.dokaz span b{display:block;color:#C8A564;font-weight:600;letter-spacing:.08em;font-size:10.5px;}
+.dokaz.text{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 30%,#2A3038,#101317);}
+.dokaz.text em{font-family:var(--font-serif);font-size:clamp(17px,1.8vw,22px);color:#C8A564;margin-bottom:28px;}
+@media (max-width:700px){.dokazy{grid-template-columns:repeat(2,1fr);}}
 </style>
 </head>
 <body>
@@ -1284,6 +1294,12 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
     <p class="hero-name">Competitive Reality</p>
     <p class="hero-tagline">Reputation, die aus Taten entsteht.</p>
     <h1>Ich mache keine Logos. Ich gestalte <em>eine bemerkenswerte Tat</em> mit, über die andere sprechen werden.</h1>
+    <nav class="dokazy" aria-label="Taten, über die andere sprachen">
+      <a class="dokaz" href="#ciny"><img src="/images/ciny/sastin2021.webp" alt="" width="900" height="675"><span><b>2021</b>Papst Franziskus segnete den Grundstein</span></a>
+      <a class="dokaz text" href="#ciny"><em>Don LaFontaine</em><span><b>2008</b>Hollywoods Stimme für einen Spot über die Slowakei</span></a>
+      <a class="dokaz" href="#ciny"><img src="/images/ciny/leroux.webp" alt="" width="900" height="675"><span><b>2026</b>Die Urenkelin Gaston Lerouxs – LEROUX100</span></a>
+      <a class="dokaz" href="#ciny"><img src="/images/ciny/vizovice2026.webp" alt="" width="900" height="675"><span><b>2026</b>Eine Reportage im AFP Wire</span></a>
+    </nav>
     <p class="maxim"><span class="strong">Fama ex factis</span> nascitur, <span class="faint">non ex verbis.</span></p>
     <p class="maxim-tr">Ruf entsteht aus Taten, nicht aus Worten.</p>
     <div class="hero-body">
@@ -1338,10 +1354,11 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
     <blockquote class="ciny-motto">„…a balanced combination of strategy, substance and symbolic actions.“<cite>Padraic Gilligan, SoolNua, Dublin – Empfehlung, 2017</cite></blockquote>
     <div class="tv-grid">
       <article class="tv-card">
-        <span class="tv-num">01 · 1991 – 1995</span><h3>Journalist</h3>
+        <span class="tv-num">01 · 1991 – 2026</span><h3>Journalist, Autor und Drehbuchautor</h3>
         <p class="cin">Die Schülerzeitung Starý blesk, die er leitete, gewann dreimal den landesweiten Wettbewerb Štúrovo pero.</p>
         <p>Danach Journalistik mit Schwerpunkt Nachrichtenagenturen. Eine seiner Staatsexamensfragen war die AFP – dreißig Jahre später verbreitete sie einen Dokumentarfilm, den er moderierte.</p>
-        <p class="hlas"><span>Wer darüber sprach</span>die Jury des Wettbewerbs Štúrovo pero, dreimal</p>
+        <p>Heute schreibt er Texte, die ein Werk tragen – etwa zur Lichtinstallation Luminous Nexus von Ašot Haas im Innovationshub von Unico Modular, ausgezeichnet mit Bronze bei den Wonder Global Design Awards 2025.</p>
+        <p class="hlas"><span>Wer darüber sprach</span>die Jury des Wettbewerbs Štúrovo pero, dreimal · <a href="https://www.linkedin.com/posts/milan-jursa-codesbrandhouse_codes-share-7518967865241391106-AM7L" target="_blank" rel="noopener">Milan Jursa, CODES Brand House: „Den Text schrieb unser Kollege Martin Horváth“ ↗</a></p>
       </article>
       <article class="tv-card">
         <span class="tv-num">02 · 2008</span><h3>Staatlicher Stratege</h3>

@@ -753,7 +753,7 @@ section .sec-head::before{content:counter(v2sec,upper-roman);display:block;font-
 .kultura .sec-head::before{-webkit-text-stroke:1px rgba(207,169,104,.5);}
 .kult-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(44px,5vw,72px) clamp(22px,2.6vw,40px);}
 .kult-card{margin:0;display:flex;flex-direction:column;min-width:0;}
-.kult-img{position:relative;aspect-ratio:4/5;overflow:hidden;background:#06080B;}
+.kult-img{position:relative;aspect-ratio:16/9;overflow:hidden;background:#06080B;}
 .kult-img::after{content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(0deg,rgba(6,8,11,.45),transparent 40%);box-shadow:inset 0 0 0 1px rgba(207,169,104,.14);transition:opacity .8s;}
 .kult-img img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(1.04);
@@ -928,7 +928,7 @@ details.viac[open] > *:not(summary){animation:v2open .7s var(--ease2) both;}
 /* -- Fantóm: dôkaz a zdroj pod citátmi -- */
 .fq-proof{max-width:760px;margin:clamp(48px,5vw,72px) auto 0;text-align:center;font-family:var(--font-disp2);font-size:clamp(20px,1.9vw,25px);line-height:1.4;color:rgba(236,228,212,.82);
   padding-top:clamp(36px,4vw,52px);border-top:1px solid var(--gold-line);}
-.fq-zdroj{margin:18px auto 0;text-align:center;font-family:var(--font-display);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;}
+.fq-zdroj{margin:28px auto 0;position:relative;text-align:center;font-family:var(--font-display);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;}
 .fq-zdroj a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--gold-line);line-height:1.8;}
 .fq-zdroj a:hover{border-bottom-color:var(--gold);}
 
@@ -970,7 +970,7 @@ details.viac[open] > *:not(summary){animation:v2open .7s var(--ease2) both;}
 .kult-zdroj a,.fq-zdroj a,.po-links a{display:inline-flex;align-items:center;gap:6px;padding:3px 10px 3px 11px;border:1px solid var(--gold-line);border-radius:999px;
   font-family:var(--font-display);font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;line-height:1.5;text-decoration:none;white-space:nowrap;
   border-bottom:1px solid var(--gold-line);transition:background .3s,border-color .3s,color .3s;}
-.kult-zdroj a::after,.fq-zdroj a::after,.po-links a::after{content:"97";font-size:11px;letter-spacing:0;}
+.kult-zdroj a::after,.fq-zdroj a::after,.po-links a::after{content:"\2197";font-size:11px;letter-spacing:0;}
 .kult-zdroj a:hover,.fq-zdroj a:hover,.po-links a:hover{border-color:var(--gold);background:rgba(207,169,104,.12);}
 .fq-zdroj a{white-space:normal;text-align:center;}
 
@@ -1446,7 +1446,7 @@ nav.nav a{letter-spacing:.05em;}
         <blockquote class="fq fq-3 reveal"><p>„Myslím si, že by sa mu to páčilo, pretože sme naozaj vo svete jeho knihy. Rešpektovali jeho pamiatku, rešpektovali jeho písanie. Je to dokonalé.“</p></blockquote>
       </div>
       <p class="fq-who reveal">Véronique Leroux, pravnučka Gastona Lerouxa, po predstavení</p>
-      <p class="fq-proof reveal">Premiéru sledovali Véronique Leroux, primátor Pezinka Roman Mács a veľvyslanec Francúzska na Slovensku Nicolas Suran.</p>
+      <p class="fq-proof">Premiéru sledovali Véronique Leroux, primátor Pezinka Roman Mács a veľvyslanec Francúzska na Slovensku Nicolas Suran.</p>
       <p class="fq-zdroj"><a href="https://sita.sk/pravnucka-gastona-lerouxa-po-premiere-v-pezinku-konecne-adaptacia-ktora-vychadza-z-knihy-rozhovor/" target="_blank" rel="noopener">Zdroj: SITA, rozhovor s Véronique Leroux</a></p>
     </div>
   </div>

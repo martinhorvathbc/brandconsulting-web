@@ -1223,6 +1223,23 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
 @media (max-width:480px){h1,h2,h3,h4,.sec-head h2,.method h2{overflow-wrap:anywhere !important;}}
 /* ==== koniec G3 ==== */
 @media (min-width:600px){.tv-grid .tv-card:nth-child(7){grid-column:1/-1;border-right:none !important;}}
+/* CINY – sedem činov (26. 10. 2026) */
+.ciny h2 em{font-style:italic;color:#7A5B22;}
+.retaz{list-style:none;display:flex;flex-wrap:wrap;gap:0;margin:26px 0 30px;padding:0;font-family:var(--font-display);font-size:12px;letter-spacing:.14em;text-transform:uppercase;}
+.retaz li{position:relative;padding:9px 30px 9px 14px;background:var(--paper-2);border:1px solid rgba(122,91,34,.35);margin:0 -1px 6px 0;color:#2E3338;}
+.retaz li:not(:last-child)::after{content:"→";position:absolute;right:10px;color:var(--ochre);}
+.retaz li:last-child{background:var(--navy);color:#fff;border-color:var(--navy);padding-right:14px;}
+.js .retaz li{opacity:0;transform:translateX(-8px);transition:opacity .5s ease,transform .5s ease;}
+.reveal.in .retaz li{opacity:1;transform:none;}
+.reveal.in .retaz li:nth-child(2){transition-delay:.25s}.reveal.in .retaz li:nth-child(3){transition-delay:.5s}
+.reveal.in .retaz li:nth-child(4){transition-delay:.75s}.reveal.in .retaz li:nth-child(5){transition-delay:1s}
+.ciny-motto{margin:0 0 clamp(30px,4vw,48px);font-family:var(--font-serif);font-style:italic;font-size:clamp(19px,2vw,23px);color:#3A3F45;max-width:760px;}
+.ciny-motto cite{display:block;margin-top:8px;font-style:normal;font-family:var(--font-display);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#7A5B22;}
+.ciny .tv-card .cin{font-weight:600;color:#14181D;}
+.ciny .tv-card .hlas{margin-top:auto;padding-top:14px;border-top:1px solid rgba(122,91,34,.25);font-size:15px;line-height:1.5;color:#3A3F45;}
+.ciny .tv-card .hlas span{display:block;font-family:var(--font-display);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#7A5B22;margin-bottom:4px;}
+.ciny .tv-card .hlas a{margin:0;padding:0;font-size:15px;letter-spacing:0;text-transform:none;font-weight:400;color:#7A5B22;text-decoration:underline;text-underline-offset:2px;}
+@media (prefers-reduced-motion:reduce){.js .retaz li{opacity:1;transform:none;transition:none;}}
 </style>
 </head>
 <body>
@@ -1262,24 +1279,21 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
   <div class="wrap">
     <p class="hero-osoba">Martin Horváth · Brand Consulting s. r. o.</p>
     <p class="hero-name">Competitive Reality</p>
-    <p class="hero-tagline">Metodología de gestión estratégica de la reputación.</p>
-    <h1>La reputación no se compra. Es la consecuencia de la <em>realidad</em> que una marca crea.</h1>
+    <p class="hero-tagline">Una reputación que nace de los hechos.</p>
+    <h1>No hago logotipos. Cocreo <em>un acto notable</em> del que hablarán otros.</h1>
     <p class="maxim"><span class="strong">Fama ex factis</span> nascitur, <span class="faint">non ex verbis.</span></p>
     <p class="maxim-tr">La reputación nace de los hechos, no de las palabras.</p>
     <div class="hero-body">
-      <p>Con demasiada frecuencia, la comunicación se convierte en el punto de partida de un proceso que debía haber comenzado con un cambio de la realidad.</p>
-      <p>Durante tres décadas de trabajo – entre los grandes medios, las relaciones internacionales, la administración pública, el sector privado, la cultura y también el ámbito sin ánimo de lucro – hemos observado una y otra vez el mismo fenómeno.</p>
+      <p>La mayoría de las marcas gestionan hoy su reputación a base de frecuencia – otra publicación, la misma frase en otro formato. Cuanto más habla una marca sin que ocurra nada, menos hablan de ella los demás.</p>
+      <p>Llevo treinta años trabajando en el orden inverso. Primero, algo que existe de verdad. Después, un acontecimiento que merece ser contado. Solo entonces se habla de ello – y de ahí nacen la atención y la <strong>competitividad</strong>.</p>
       <details class="viac"><summary>Seguir leyendo</summary>
-<p>Allí donde detrás de la comunicación existía un cambio real, la reputación acabó surgiendo con el tiempo.</p>
-      <p>Allí donde la comunicación sustituía a una sustancia inexistente, la reputación tarde o temprano se derrumbó.</p>
-      <p>La metodología Competitive Reality nació como respuesta a esta experiencia.</p>
-      <p>No se construye sobre la pregunta de <strong>cómo comunicar mejor.</strong> Empieza mucho antes. Se pregunta <strong>si existe una realidad capaz de sostener la comunicación.</strong></p>
-      <p>Y si esa realidad es competitiva y suficientemente atractiva.</p>
-      <p>La respuesta a esta pregunta decide todo lo que viene después.</p>
-    
-</details></div>
+      <p>Lo aprendí de mi propio error. La primera campaña de imagen de Eslovaquia en CNN International, que preparé, estaba bien hecha – y apenas cambió la percepción del país. La realidad bajo la imagen aún no podía sostener lo que la campaña prometía.</p>
+      <p>Desde entonces no pregunto cómo comunicar mejor. Pregunto <strong>si existe una realidad que la comunicación pueda sostener</strong> – y qué acto la convertirá en una historia que el mundo cuente por sí solo.</p>
+      <p>El logotipo y el diseño gráfico son el envoltorio. Un buen envoltorio tiene su valor, y lo hacen quienes mejor saben hacerlo. Yo trabajo en lo que habrá dentro.</p>
+      </details>
+    </div>
     <div class="hero-actions">
-      <a class="btn btn-primary" href="#proof">Ver la referencia →</a>
+      <a class="btn btn-primary" href="#ciny">Siete actos →</a>
       <a class="btn btn-ghost" href="#begin">Cómo trabajamos →</a>
     </div>
   </div>
@@ -1310,12 +1324,59 @@ nav.nav a:hover,nav.nav a:focus-visible{color:var(--ivory);}
 </section>
 
 <!-- TVARE -->
-<section class="tvare" id="tvare">
+<section class="tvare ciny" id="ciny">
+  <span id="tvare" aria-hidden="true"></span>
   <div class="wrap reveal">
-    <p class="eyebrow">Rostros</p>
-    <h2>Una persona. <em>Siete disciplinas.</em></h2>
-    <p class="tv-lead">Cada una puede contratarse por separado. Juntas no se pueden repetir.</p>
-    <div class="tv-grid"><div class="tv-card"><span class="tv-num">01</span><h3>Periodista</h3><p>Escribió antes de asesorar. Estudió periodismo con enfoque en las agencias de noticias y todavía lee la diferencia entre lo que una institución dice de sí misma y lo que realmente es.</p><a href="#about">Más →</a></div><div class="tv-card"><span class="tv-num">02</span><h3>Estratega del Estado</h3><p>Al servicio del Estado (SARIO, Agencia Eslovaca de Turismo): cumbre Bush – Putin 2005, EXPO Zaragoza, Banco de Inglaterra, visita de Estado de la reina Isabel II, campaña de Eslovaquia en CNN International.</p><a href="#about">Más →</a></div><div class="tv-card"><span class="tv-num">03</span><h3>Consultor de reputación</h3><p>Autor de la metodología Competitive Reality, inspirado durante 20 años por el trabajo de Simon Anholt. Prepara a sus clientes para un estándar que resiste ante una agencia internacional de noticias.</p><a href="#method">Más →</a></div><div class="tv-card"><span class="tv-num">04</span><h3>Voz</h3><p>Doblaje para Disney/Pixar y Marvel, colaboración con Don LaFontaine y Peter Baker. Erik en El fantasma de la ópera.</p><a href="#voice">Más →</a></div><div class="tv-card"><span class="tv-num">05</span><h3>Autor y productor</h3><p>Fantóm opery na Zámku, Cuentos para los pequeños lápices, El libro de la selva en Dolby Atmos, los derechos de Jesus Christ Superstar negociados directamente con The Really Useful Group.</p><a href="#fantom">Más →</a></div><div class="tv-card"><span class="tv-num">06</span><h3>Orador</h3><p>53 intervenciones públicas y conferencias desde 2006.</p><a href="#speaking">Más →</a></div><div class="tv-card"><span class="tv-num">07</span><h3>Dramaturgo y presentador</h3><p>Dramaturgo, guionista y presentador de un documental sobre la transformación industrial de la región de Zlín para CODES Brand House. Agence France-Presse lo distribuyó en su wire internacional.</p><a href="#proof">Más →</a></div></div>
+    <p class="eyebrow">Siete papeles · siete actos</p>
+    <h2>Una persona. <em>Siete actos de los que hablaron otros.</em></h2>
+    <ol class="retaz" aria-label="La cadena de la reputación">
+      <li>sustancia</li><li>acontecimiento notable</li><li>otros hablan de ello</li><li>atención</li><li>competitividad</li>
+    </ol>
+    <blockquote class="ciny-motto">„…a balanced combination of strategy, substance and symbolic actions.“<cite>Padraic Gilligan, SoolNua, Dublín – recomendación, 2017</cite></blockquote>
+    <div class="tv-grid">
+      <article class="tv-card">
+        <span class="tv-num">01 · 1991 – 1995</span><h3>Periodista</h3>
+        <p class="cin">La revista escolar Starý blesk, que dirigía, ganó tres veces el concurso nacional Štúrovo pero.</p>
+        <p>Después, periodismo con especialización en agencias de noticias. Una de las preguntas de su examen estatal fue la AFP – treinta años más tarde distribuyó un documental que él presentaba.</p>
+        <p class="hlas"><span>Quién habló de ello</span>el jurado del concurso Štúrovo pero, tres veces</p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">02 · 2008</span><h3>Estratega del Estado</h3>
+        <p class="cin">La primera gran campaña de imagen de Eslovaquia en CNN International. La versión inglesa del spot la locutó Don LaFontaine.</p>
+        <p>Y una lección que hoy cuenta abiertamente: la campaña era buena, pero apenas cambió la percepción del país. De ese error nació todo un método.</p>
+        <p class="hlas"><span>Quién habló de ello</span><a href="https://www.cas.sk/clanok/82576/spot-o-slovensku-nahovoril-najznamejsi-hlas-hollywoodu/" target="_blank" rel="noopener">Nový Čas: «La voz más famosa de Hollywood locutó el spot sobre Eslovaquia» ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">03 · 2021</span><h3>Consultor de reputación</h3>
+        <p class="cin">En lugar de una campaña, un acto: el papa Francisco bendijo la primera piedra del nuevo Hospital Universitario de San Martín.</p>
+        <p>Una inversión de más de 300 millones de euros y, por ahora, solo un plan. Una bendición en Šaštín el 15 de septiembre de 2021 no se puede comprar ni repetir.</p>
+        <p class="hlas"><span>Quién habló de ello</span><a href="https://www.teraz.sk/regiony/papez-pozehnal-zakladny-kamen-univ/577156-clanok.html" target="_blank" rel="noopener">TASR ↗</a> · <a href="https://www.prnewswire.com/news-releases/pope-francis-has-blessed-the-cornerstone-of-new-saint-martins-hospital--the-first-slovak-healthcare-project-funded-by-the-eu-recovery-and-resilience-plan-301379788.html" target="_blank" rel="noopener">PR Newswire ↗</a> · <a href="https://www.omediach.com/marketing/22645-prokop-2021-pozna-svojich-vitazov-toto-su-najlepsie-pr-projekty-na-slovensku" target="_blank" rel="noopener">PROKOP 2021, 3.er puesto ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">04 · 2022 – 2025</span><h3>Voz</h3>
+        <p class="cin">Una película sin imagen: El libro de la selva en la oscuridad de un cine, solo sonido y voz, para niños ciegos.</p>
+        <p>De niño escuchaba radioteatro con un vecino ciego. Hoy es autor del concepto y voz de los Cuentos para pequeños Pastelky – más de 3,9 millones de escuchas.</p>
+        <p class="hlas"><span>Quién habló de ello</span>«Dijo que había estado en la selva y que los animales se acercaron muchísimo. A través del cristal del teléfono no pueden llegar hasta ella.» – madre de una espectadora ciega · <a href="https://sita.sk/okolite-zvuky-nas-vtiahli-do-dzungle-povedali-nevidiace-a-slabozrake-deti-po-navsteve-kina-video-foto/" target="_blank" rel="noopener">SITA ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">05 · 2026</span><h3>Autor y productor</h3>
+        <p class="cin">Fantóm opery na Zámku – autor del concepto y del guion, productor creativo y voz del Fantasma.</p>
+        <p>Estreno el 18 de octubre y segunda función el 19 de octubre de 2026 en el Šimák Zámok Pezinok, ambas noches con entradas agotadas. En el estreno estaba la familia de Gaston Leroux.</p>
+        <p class="hlas"><span>Quién habló de ello</span><a href="https://sita.sk/pravnucka-gastona-lerouxa-po-premiere-v-pezinku-konecne-adaptacia-ktora-vychadza-z-knihy-rozhovor/" target="_blank" rel="noopener">SITA, entrevista con Véronique Leroux: «Por fin una adaptación que parte del libro» ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">06 · 2006 – 2026</span><h3>Orador</h3>
+        <p class="cin">53 intervenciones públicas – desde TEDx hasta la OCDE en París.</p>
+        <p>En 2024, dramaturgo y moderador de la primera Competitive Identity Masterclass de Simon Anholt y Robert Govers en Europa Central.</p>
+        <p class="hlas"><span>Quién habló de ello</span>«Le bastaban un rotulador y una pizarra para ganarse al final de la clase un aplauso natural.» – estudiante de la FMK UCM · <a href="https://kongres-magazine.eu/2024/07/zuzana-mikulasova-slovakia-needs-to-clarify-how-it-wants-to-appear-in-the-world/" target="_blank" rel="noopener">Kongres Magazine ↗</a></p>
+      </article>
+      <article class="tv-card">
+        <span class="tv-num">07 · 2026</span><h3>Dramaturgo y presentador</h3>
+        <p class="cin">Un documental sobre la transformación industrial de la región de Zlín para CODES Brand House – dramaturgo, guionista y presentador.</p>
+        <p>Una pequeña región con el legado de Baťa, distribuida en todo el mundo a través del AFP Wire – la AFP tiene periodistas en 151 países.</p>
+        <p class="hlas"><span>Quién habló de ello</span><a href="https://mediaconnect.com/a-region-haunted-by-nostalgia-searches-for-a-new-industrial-future?lang=en" target="_blank" rel="noopener">Agence France-Presse ↗</a></p>
+      </article>
+    </div>
   </div>
 </section>
 

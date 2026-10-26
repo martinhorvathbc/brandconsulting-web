@@ -1018,6 +1018,24 @@ nav.nav a{letter-spacing:.05em;}
 @media (max-width:620px){.tv-grid{grid-template-columns:1fr;}
  .tv-grid .tv-card{padding:24px 0 !important;border-left:none !important;}}
 /* ==== koniec TVARE ==== */
+/* ==== CISLA ==== */
+.kult-cisla{margin:0 0 clamp(40px,5vw,64px);}
+.kult-cisla .kc-label{font-size:12px;letter-spacing:.28em;text-transform:uppercase;font-weight:600;color:#D9B878;margin:0 0 18px;}
+.kc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(207,169,104,.35);border-bottom:1px solid rgba(207,169,104,.35);}
+.kc-item{padding:26px 22px;display:flex;flex-direction:column;gap:8px;min-width:0;}
+.kc-item+.kc-item{border-left:1px solid rgba(207,169,104,.22);}
+.kc-item:first-child{padding-left:0;}
+.kc-num{font-family:var(--font-disp2,Georgia,serif);font-size:clamp(34px,3.4vw,48px);line-height:1;color:#ECE4D4;font-weight:500;white-space:nowrap;}
+.kc-txt{font-size:15px;line-height:1.5;color:rgba(236,228,212,.85);}
+.kc-src{margin-top:auto;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#D9B878;text-decoration:none;}
+.kc-src:hover{color:#ECE4D4;}
+@media (max-width:900px){.kc-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+ .kc-item{padding:22px 18px 22px 0 !important;border-left:none !important;}
+ .kc-item:nth-child(2n){padding-left:18px !important;border-left:1px solid rgba(207,169,104,.22) !important;}
+ .kc-item:nth-child(-n+2){border-bottom:1px solid rgba(207,169,104,.22);}}
+@media (max-width:480px){.kc-grid{grid-template-columns:1fr;}
+ .kc-item{padding:20px 0 !important;border-left:none !important;border-bottom:1px solid rgba(207,169,104,.22);}}
+/* ==== koniec CISLA ==== */
 </style>
 </head>
 <body>
@@ -1492,7 +1510,8 @@ nav.nav a{letter-spacing:.05em;}
       <p class="eyebrow">En el arte y la producción</p>
       <h2>Voz, sonido e historia. <em>La cultura, donde a nadie se le paga por creer.</em></h2>
     </div>
-    <div class="kult-grid">
+    <div class="kult-cisla"><p class="kc-label">Lo que se puede verificar, no lo que se puede decir</p><div class="kc-grid"><div class="kc-item"><span class="kc-num">3.992.244</span><span class="kc-txt">visualizaciones del canal Cuentos para los pequeños lápices</span><a class="kc-src" href="https://www.youtube.com/@RozpravkypremalePastelky" target="_blank" rel="noopener">YouTube, 9 oct. 2026 ↗</a></div><div class="kc-item"><span class="kc-num">60</span><span class="kc-txt">altavoces: El libro de la selva en Dolby Atmos, CINEMAX Bory</span><a class="kc-src" href="https://sita.sk/okolite-zvuky-nas-vtiahli-do-dzungle-povedali-nevidiace-a-slabozrake-deti-po-navsteve-kina-video-foto/" target="_blank" rel="noopener">SITA, 15 dic. 2025 ↗</a></div><div class="kc-item"><span class="kc-num">1 + 7</span><span class="kc-txt">estreno y siete funciones más de la Película sin imagen en Partizánske</span><a class="kc-src" href="https://sita.sk/partizanske-sa-stane-hlavnym-mestom-nevidiacich-a-slabozrakych-do-kina-mieri-kniha-dzungli-film-bez-obrazu-rozhovor/" target="_blank" rel="noopener">SITA, 7 abr. 2025 ↗</a></div><div class="kc-item"><span class="kc-num">2 / 2</span><span class="kc-txt">funciones agotadas de Fantóm opery na Zámku</span><a class="kc-src" href="https://www.fantomopery.sk/" target="_blank" rel="noopener">fantomopery.sk ↗</a></div></div></div>
+<div class="kult-grid">
       <figure class="kult-card reveal">
         <div class="kult-img"><img src="/images/kultura/pastelky.jpg" alt="Cuentos para los pequeños lápices (Rozprávky pre malé Pastelky)" loading="lazy"></div>
         <figcaption><span class="kult-rok">2022 →</span><h3>Cuentos para los pequeños lápices (Rozprávky pre malé Pastelky)</h3><p>Autor del concepto de un proyecto filantrópico, el mayor proyecto sonoro de Eslovaquia para personas ciegas. Casi 4 millones de visualizaciones en YouTube.</p><p class="kult-zdroj">para <a href="https://www.codes.sk/spolocensky-presah/" target="_blank" rel="noopener">CODES Brand House</a> · Fuente: <a href="https://www.youtube.com/@RozpravkypremalePastelky" target="_blank" rel="noopener">YouTube</a></p></figcaption>
@@ -2666,6 +2685,8 @@ nav.nav a{letter-spacing:.05em;}
       <article class="po-card reveal">
         <p class="po-eyebrow">París · AFP, OCDE, Véronique Leroux · 2026</p>
         <h3>Hecho, datos, relato</h3>
+        <p class="po-context">En el departamento de fotografía de AFP en París, a la jefa del departamento:</p>
+        <p class="po-pull po-zlato">«Si los extraterrestres quisieran entender en 15 segundos lo que está pasando ahora mismo en el planeta Tierra, les bastaría con copiar sus servidores.»</p>
         <blockquote class="po-excerpt"><p>«Hecho – la AFP, donde un hecho pasa por la verificación antes de convertirse en noticia. Datos – la OCDE, donde las estrategias de innovación para las regiones se basan en cifras sólidas, no en estados de ánimo, sentimientos o recuerdos nostálgicos. Relato – un diálogo con Véronique Leroux, bisnieta del autor de El fantasma de la ópera, sobre la esencia de nuestro proyecto inmersivo Erik. Un relato que tiene una fuente.»</p></blockquote>
         <p class="po-pull">«Cuantas menos capas hay entre el acontecimiento y la persona, mayor es el peso.»</p>
         <p class="po-links"><a href="https://www.linkedin.com/in/martinhorvathbc/recent-activity/all/" target="_blank" rel="noopener">Texto completo en LinkedIn</a></p>

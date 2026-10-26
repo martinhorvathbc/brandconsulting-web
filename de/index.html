@@ -1018,6 +1018,24 @@ nav.nav a{letter-spacing:.05em;}
 @media (max-width:620px){.tv-grid{grid-template-columns:1fr;}
  .tv-grid .tv-card{padding:24px 0 !important;border-left:none !important;}}
 /* ==== koniec TVARE ==== */
+/* ==== CISLA ==== */
+.kult-cisla{margin:0 0 clamp(40px,5vw,64px);}
+.kult-cisla .kc-label{font-size:12px;letter-spacing:.28em;text-transform:uppercase;font-weight:600;color:#D9B878;margin:0 0 18px;}
+.kc-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(207,169,104,.35);border-bottom:1px solid rgba(207,169,104,.35);}
+.kc-item{padding:26px 22px;display:flex;flex-direction:column;gap:8px;min-width:0;}
+.kc-item+.kc-item{border-left:1px solid rgba(207,169,104,.22);}
+.kc-item:first-child{padding-left:0;}
+.kc-num{font-family:var(--font-disp2,Georgia,serif);font-size:clamp(34px,3.4vw,48px);line-height:1;color:#ECE4D4;font-weight:500;white-space:nowrap;}
+.kc-txt{font-size:15px;line-height:1.5;color:rgba(236,228,212,.85);}
+.kc-src{margin-top:auto;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#D9B878;text-decoration:none;}
+.kc-src:hover{color:#ECE4D4;}
+@media (max-width:900px){.kc-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+ .kc-item{padding:22px 18px 22px 0 !important;border-left:none !important;}
+ .kc-item:nth-child(2n){padding-left:18px !important;border-left:1px solid rgba(207,169,104,.22) !important;}
+ .kc-item:nth-child(-n+2){border-bottom:1px solid rgba(207,169,104,.22);}}
+@media (max-width:480px){.kc-grid{grid-template-columns:1fr;}
+ .kc-item{padding:20px 0 !important;border-left:none !important;border-bottom:1px solid rgba(207,169,104,.22);}}
+/* ==== koniec CISLA ==== */
 </style>
 </head>
 <body>
@@ -1492,7 +1510,8 @@ nav.nav a{letter-spacing:.05em;}
       <p class="eyebrow">In Kunst und Produktion</p>
       <h2>Stimme, Klang und Geschichte. <em>Kultur, in der niemand fürs Glauben bezahlt wird.</em></h2>
     </div>
-    <div class="kult-grid">
+    <div class="kult-cisla"><p class="kc-label">Was sich überprüfen lässt, nicht was sich sagen lässt</p><div class="kc-grid"><div class="kc-item"><span class="kc-num">3.992.244</span><span class="kc-txt">Aufrufe des Kanals Märchen für kleine Buntstifte</span><a class="kc-src" href="https://www.youtube.com/@RozpravkypremalePastelky" target="_blank" rel="noopener">YouTube, 9. 10. 2026 ↗</a></div><div class="kc-item"><span class="kc-num">60</span><span class="kc-txt">Lautsprecher: Das Dschungelbuch in Dolby Atmos, CINEMAX Bory</span><a class="kc-src" href="https://sita.sk/okolite-zvuky-nas-vtiahli-do-dzungle-povedali-nevidiace-a-slabozrake-deti-po-navsteve-kina-video-foto/" target="_blank" rel="noopener">SITA, 15. 12. 2025 ↗</a></div><div class="kc-item"><span class="kc-num">1 + 7</span><span class="kc-txt">Premiere und sieben Wiederholungen des Films ohne Bild in Partizánske</span><a class="kc-src" href="https://sita.sk/partizanske-sa-stane-hlavnym-mestom-nevidiacich-a-slabozrakych-do-kina-mieri-kniha-dzungli-film-bez-obrazu-rozhovor/" target="_blank" rel="noopener">SITA, 7. 4. 2025 ↗</a></div><div class="kc-item"><span class="kc-num">2 / 2</span><span class="kc-txt">ausverkaufte Vorstellungen von Fantóm opery na Zámku</span><a class="kc-src" href="https://www.fantomopery.sk/" target="_blank" rel="noopener">fantomopery.sk ↗</a></div></div></div>
+<div class="kult-grid">
       <figure class="kult-card reveal">
         <div class="kult-img"><img src="/images/kultura/pastelky.jpg" alt="Märchen für kleine Buntstifte (Rozprávky pre malé Pastelky)" loading="lazy"></div>
         <figcaption><span class="kult-rok">2022 →</span><h3>Märchen für kleine Buntstifte (Rozprávky pre malé Pastelky)</h3><p>Konzeptautor eines philanthropischen Projekts – des größten Audioprojekts der Slowakei für Blinde. Fast 4 Millionen Aufrufe auf YouTube.</p><p class="kult-zdroj">für <a href="https://www.codes.sk/spolocensky-presah/" target="_blank" rel="noopener">CODES Brand House</a> · Quelle: <a href="https://www.youtube.com/@RozpravkypremalePastelky" target="_blank" rel="noopener">YouTube</a></p></figcaption>
@@ -2666,6 +2685,8 @@ nav.nav a{letter-spacing:.05em;}
       <article class="po-card reveal">
         <p class="po-eyebrow">Paris · AFP, OECD, Véronique Leroux · 2026</p>
         <h3>Fakt, Daten, Geschichte</h3>
+        <p class="po-context">In der Fotoabteilung der AFP in Paris, zur Leiterin der Abteilung:</p>
+        <p class="po-pull po-zlato">„Wenn Außerirdische in 15 Sekunden verstehen wollten, was gerade auf dem Planeten Erde geschieht, müssten sie nur Ihre Server kopieren.“</p>
         <blockquote class="po-excerpt"><p>„Fakt – AFP, wo ein Fakt die Überprüfung durchläuft, bevor daraus eine Nachricht wird. Daten – die OECD, wo Innovationsstrategien für Regionen auf harten Zahlen beruhen, nicht auf Stimmungen und Sentiment oder nostalgischem Erinnern. Geschichte – ein Gespräch mit Véronique Leroux, der Urenkelin des Autors des Phantoms der Oper, über das Wesen unseres immersiven Projekts Erik. Eine Geschichte, die eine Quelle hat.“</p></blockquote>
         <p class="po-pull">„Je weniger Schichten zwischen dem Ereignis und dem Menschen, desto größer das Gewicht.“</p>
         <p class="po-links"><a href="https://www.linkedin.com/in/martinhorvathbc/recent-activity/all/" target="_blank" rel="noopener">Der ganze Text auf LinkedIn</a></p>

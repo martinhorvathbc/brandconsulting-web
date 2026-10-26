@@ -4,5 +4,5 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^(.*)$ https://brandconsulting.sk/$1 [R=301,L]
 
-# 26. 10. 2026: web len SK, EN, FR – staré nemecké a španielske adresy idú na anglickú verziu
-RewriteRule ^(de|es)(/.*)?$ https://brandconsulting.sk/en/ [R=301,L]
+# 26. 10. 2026: web len SK a EN – staré nemecké, španielske a francúzske adresy idú na anglickú verziu
+RewriteRule ^(de|es|fr)(/.*)?$ https://brandconsulting.sk/en/ [R=301,L]

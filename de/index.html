@@ -996,6 +996,28 @@ nav.nav a{letter-spacing:.05em;}
 .why .about-body p,.why .about-body li,.why details p{color:rgba(236,228,212,.82) !important;}
 /* ==== koniec V2 ==== */
 
+/* ==== TVARE ==== */
+.tvare{background:#F3EFE8;padding:clamp(72px,9vw,120px) 0;}
+.tvare .eyebrow{color:#7A5B22;letter-spacing:.32em;text-transform:uppercase;font-size:12px;font-weight:600;}
+.tvare h2{font-family:var(--font-disp2,Georgia,serif);font-weight:500;font-size:clamp(36px,5vw,62px);line-height:1.06;margin:14px 0 14px;color:#14181D;}
+.tvare h2 em{font-style:italic;color:#7A5B22;}
+.tvare .tv-lead{font-family:var(--font-disp2,Georgia,serif);font-style:italic;font-size:clamp(20px,2.2vw,26px);color:#3A3F45;margin:0 0 clamp(36px,5vw,56px);max-width:720px;}
+.tv-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid rgba(122,91,34,.35);}
+.tv-card{padding:30px 28px;border-bottom:1px solid rgba(122,91,34,.35);display:flex;flex-direction:column;gap:10px;min-width:0;}
+.tv-grid .tv-card:nth-child(3n+1){padding-left:0;}
+.tv-grid .tv-card:nth-child(3n){padding-right:0;}
+.tv-grid .tv-card:nth-child(3n+1),.tv-grid .tv-card:nth-child(3n+2){border-right:1px solid rgba(122,91,34,.22);}
+.tv-num{font-family:var(--font-disp2,Georgia,serif);font-size:15px;color:#7A5B22;letter-spacing:.12em;}
+.tv-card h3{font-family:var(--font-disp2,Georgia,serif);font-weight:500;font-size:clamp(26px,2.4vw,32px);line-height:1.1;margin:0;color:#14181D;overflow-wrap:break-word;hyphens:auto;}
+.tv-card p{margin:0;font-size:17px;line-height:1.6;color:#2E3338;}
+.tv-card a{margin-top:auto;padding-top:6px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:600;color:#7A5B22;text-decoration:none;}
+.tv-card a:hover{color:#14181D;}
+@media (max-width:980px){.tv-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+ .tv-grid .tv-card{padding:26px 22px 26px 0 !important;border-right:none !important;border-left:none !important;}
+ .tv-grid .tv-card:nth-child(2n){padding-left:22px !important;border-left:1px solid rgba(122,91,34,.22) !important;}}
+@media (max-width:620px){.tv-grid{grid-template-columns:1fr;}
+ .tv-grid .tv-card{padding:24px 0 !important;border-left:none !important;}}
+/* ==== koniec TVARE ==== */
 </style>
 </head>
 <body>
@@ -1084,6 +1106,16 @@ nav.nav a{letter-spacing:.05em;}
       <div class="proof-item"><span class="stat-num">Simon Anholt</span><span class="stat-lbl">20 Jahre<br>Inspiration durch die Arbeit<br>von Simon Anholt</span></div>
       <div class="proof-item"><span class="stat-num">Heiliger Stuhl</span><span class="stat-lbl">Statt einer Kampagne –<br>Papst Franziskus<br>und der PROKOP-Preis</span></div>
     </div>
+  </div>
+</section>
+
+<!-- TVARE -->
+<section class="tvare" id="tvare">
+  <div class="wrap reveal">
+    <p class="eyebrow">Gesichter</p>
+    <h2>Ein Mensch. <em>Sechs Disziplinen.</em></h2>
+    <p class="tv-lead">Jede lässt sich einzeln beauftragen. Zusammen lassen sie sich nicht wiederholen.</p>
+    <div class="tv-grid"><div class="tv-card"><span class="tv-num">01</span><h3>Journalist</h3><p>Er schrieb, bevor er beriet. Er studierte Journalismus mit Schwerpunkt Nachrichtenagenturen und liest bis heute den Unterschied zwischen dem, was eine Institution über sich sagt, und dem, was sie ist.</p><a href="#about">Mehr →</a></div><div class="tv-card"><span class="tv-num">02</span><h3>Staatlicher Stratege</h3><p>Im Dienst des Staates (SARIO, Slowakische Tourismusagentur): Gipfel Bush – Putin 2005, EXPO Zaragoza, Bank of England, Staatsbesuch von Königin Elisabeth II., Kampagne der Slowakei auf CNN International.</p><a href="#about">Mehr →</a></div><div class="tv-card"><span class="tv-num">03</span><h3>Reputationsberater</h3><p>Autor der Methodik Competitive Reality, seit 20 Jahren inspiriert von der Arbeit Simon Anholts. Projekte von Kunden kann er bis auf den AFP Wire bringen.</p><a href="#method">Mehr →</a></div><div class="tv-card"><span class="tv-num">04</span><h3>Stimme</h3><p>Synchronisation für Disney/Pixar und Marvel, Zusammenarbeit mit Don LaFontaine und Peter Baker. Erik im Phantom der Oper.</p><a href="#voice">Mehr →</a></div><div class="tv-card"><span class="tv-num">05</span><h3>Autor und Produzent</h3><p>Fantóm opery na Zámku, Märchen für kleine Buntstifte, Das Dschungelbuch in Dolby Atmos, die Rechte an Jesus Christ Superstar direkt mit The Really Useful Group verhandelt.</p><a href="#fantom">Mehr →</a></div><div class="tv-card"><span class="tv-num">06</span><h3>Redner</h3><p>53 öffentliche Auftritte und Vorträge seit 2006.</p><a href="#speaking">Mehr →</a></div></div>
   </div>
 </section>
 

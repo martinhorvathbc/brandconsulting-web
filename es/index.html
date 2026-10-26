@@ -510,6 +510,9 @@
 .milestone-body,.step{min-width:0;overflow-wrap:break-word;hyphens:auto;}
 @media (max-width:480px){ .lang{margin-left:6px;} .lang a{padding:4px 3px;font-size:10px;} .wordmark{font-size:13px;letter-spacing:.5px;} }
 @media (max-width:400px){ .steps{grid-template-columns:1fr;} header .wrap, .bar{padding-left:16px;padding-right:16px;} }
+.hero-portret{position:absolute;top:70px;right:3%;height:min(78vh,720px);width:auto;z-index:1;opacity:.88;pointer-events:none;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 28%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 28%),linear-gradient(to bottom,transparent 0,#000 14%,#000 86%,transparent 100%);mask-composite:intersect;}
+@media (max-width:1100px){.hero-portret{opacity:.18;right:-20%;}}
 </style>
 </head>
 <body>
@@ -551,6 +554,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <img class="hero-portret" src="/images/portret-hero.webp" alt="" aria-hidden="true">
   <div class="wrap">
     <p class="hero-name">Competitive Reality</p>
     <p class="hero-tagline">Metodología de gestión estratégica de la reputación.</p>
